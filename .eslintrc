@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      1,
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-filename-extension": 0,
+    "no-alert": 0,
+    "arrow-parens": [
+      1,
+      "always"
+    ],
+    "no-plusplus": 0,
+    "react/prop-types": 0,
+    "no-console": 0,
+    "object-shorthand": 1,
+    "class-methods-use-this": 1,
+    "no-else-return" : 0
+  }
+}
