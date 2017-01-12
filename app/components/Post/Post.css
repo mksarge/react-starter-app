@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 20px;
+  border: 1px solid #aabbfe;
+  border-radius: 10px;
+  background: #ccddfe;
+  text-align: center;
+}
+
+.subcontainer {
+  margin: 0 5px 5px;
+  padding: 10px;
+  border: 1px solid #aabbfe;
+  border-radius: 10px;
+  background: white;
+}
+
+.subcontainer a {
+  padding: 0 6px;
+  border-radius: 10px;
+  background: #def;
+}
