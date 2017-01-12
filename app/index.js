@@ -4,6 +4,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import FastClick from 'fastclick';
 import Layout from './components/Layout';
 import HomePage from './pages/home';
+import BlogPage from './pages/blog';
 import DocsPage from './pages/docs';
 import ErrorPage from './pages/error';
 
@@ -12,6 +13,7 @@ render(
     <Route path="/" component={Layout}>
       <IndexRoute component={HomePage} />
       <Route path="docs" component={DocsPage} />
+      <Route path="blog" component={BlogPage} />
       <Route path="*" component={ErrorPage} />
     </Route>
   </Router>,
