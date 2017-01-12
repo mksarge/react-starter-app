@@ -1,6 +1,12 @@
 .navbar {
   margin: 0 0 20px;
   padding-right: 50px;
-  background: #f0f4fa;
   text-align: right;
+  background: #f0f4fa;
+  background-image: linear-gradient(90deg, #fff, #f0f4fa);
+}
+
+.navblock {
+  display: inline-block;
+  padding: 0 15px;
 }

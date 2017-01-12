@@ -15,9 +15,9 @@ const HighlightedLink = (props) => {
   const match = props.to === `/${path3}`;
   return (
     <Link
+      className={css.navblock}
       style={{
-        display: 'inline-block',
-        background: match ? '#90b0fa' : 'none',
+        background: match ? '#a0c0ff' : 'none',
         color: match ? 'white' : '#303080',
       }}
       to={props.to}
