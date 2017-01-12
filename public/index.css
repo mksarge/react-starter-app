@@ -1,0 +1,46 @@
+html,
+body,
+#app {
+  min-height: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-weight: normal;
+  line-height: 2em;
+  padding: 0;
+  margin: 0;
+  color: #303080;
+}
+
+h1 { font-size: 1.8em; }
+
+h2 { font-size: 1.5em; }
+
+h3 { font-size: 1.3em; }
+
+h4 { font-size: 1.1em; }
+
+h5 { font-size: 1em; }
+
+p,
+li,
+h6 { font-size: 1em; }
+
+a,
+a:hover {
+  color: #4c76fa;
+}
