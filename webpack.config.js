@@ -176,7 +176,7 @@ if (isDebug && useHMR) {
   babelConfig.plugins.unshift('react-hot-loader/babel');
   config.entry.unshift('react-hot-loader/patch', 'webpack-hot-middleware/client');
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  config.plugins.push(new webpack.NoErrorsPlugin());
+  config.plugins.push(new webpack.NoEmitOnErrorsPlugin());
 }
 
 module.exports = config;
