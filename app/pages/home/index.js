@@ -1,10 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router';
 
 class HomePage extends React.Component {
 
   componentDidMount() {
-    document.title = 'Home';
+    document.title = 'Home · React Starter';
   }
 
   render() {

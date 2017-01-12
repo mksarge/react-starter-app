@@ -16,7 +16,11 @@ const Layout = (props) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.node,
+};
+
+Layout.defaultProps = {
+  children: null,
 };
 
 export default Layout;

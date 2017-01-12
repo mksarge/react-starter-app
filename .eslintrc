@@ -2,14 +2,13 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "env": {
-    "browser": true,
-    "node": true
+    "browser": true
   },
   "rules": {
     "import/no-extraneous-dependencies": [
-      1,
+      0,
       {
-        "devDependencies": true
+        "peerDependencies": true
       }
     ],
     "react/jsx-filename-extension": 0,
@@ -19,10 +18,10 @@
       "always"
     ],
     "no-plusplus": 0,
-    "react/prop-types": 0,
     "no-console": 0,
     "object-shorthand": 1,
     "class-methods-use-this": 1,
-    "no-else-return" : 0
+    "no-else-return": 0,
+    "react/no-danger": 0
   }
 }

@@ -3,7 +3,7 @@ import React from 'react';
 class DocsPage extends React.Component {
 
   componentDidMount() {
-    document.title = 'Docs';
+    document.title = 'Docs · React Starter';
   }
 
   render() {

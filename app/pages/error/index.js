@@ -4,13 +4,13 @@ import css from './styles.css';
 
 class ErrorPage extends React.Component {
 
-  componentDidMount() {
-    document.title = 'Page Not Found';
-  }
-
-  goBack(e) {
+  static goBack(e) {
     e.preventDefault();
     browserHistory.goBack();
+  }
+
+  componentDidMount() {
+    document.title = 'Page Not Found';
   }
 
   render() {
@@ -20,10 +20,10 @@ class ErrorPage extends React.Component {
           <h1 className={css.code}>code</h1>
           <p className={css.title}>title</p>
           <p className={css.text}>
-            The page you're looking for does not exist or an another error occurred.
+            The page you&apos;re looking for does not exist or an another error occurred.
           </p>
           <p className={css.text}>
-            <a href="/" onClick={this.goBack}>Go back</a>, or head over to the&nbsp;
+            <a href="/" onClick={ErrorPage.goBack}>Go back</a>, or head over to the&nbsp;
             <Link to="/">home page</Link> to choose a new direction.
           </p>
         </main>

@@ -32,6 +32,11 @@ HighlightedLink.propTypes = {
   title: PropTypes.string,
 };
 
+HighlightedLink.defaultProps = {
+  to: '',
+  title: '',
+};
+
 const Navbar = () => (
   <div className={css.navbar} >
     <HighlightedLink to="/" title="Home" />&nbsp;

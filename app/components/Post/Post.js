@@ -20,6 +20,10 @@ class Post extends React.Component {
     else this.setState({ title: post.title, html: post.html });
   }
 
+  componentDidMount() {
+    document.title = `${this.state.title} · React Starter`;
+  }
+
   render() {
     return (
       <div className={css.container}>
@@ -34,6 +38,13 @@ Post.propTypes = {
   params: PropTypes.shape({
     postId: PropTypes.string,
   }),
+};
+
+
+Post.defaultProps = {
+  params: {
+    postId: '',
+  },
 };
 
 export default Post;

@@ -86,7 +86,7 @@
     }
   },
   "scripts": {
-    "eslint": "eslint components core pages test utils index.js run.js webpack.config.js",
+    "eslint": "eslint app posts test utils run.js webpack.config.js",
     "stylelint": "stylelint \"app/**/*.css\"",
     "lint": "npm run eslint && npm run stylelint",
     "test": "mocha --compilers js:babel-register",

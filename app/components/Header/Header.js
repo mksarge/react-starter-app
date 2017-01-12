@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 import React, { PropTypes } from 'react';
 import { browserHistory } from 'react-router';
 import css from './Header.css';
@@ -16,5 +18,10 @@ const Header = (props) => (
 Header.propTypes = {
   title: PropTypes.string,
 };
+
+Header.defaultProps = {
+  title: '',
+};
+
 
 export default Header;

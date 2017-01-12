@@ -4,16 +4,12 @@ import posts from '../../../posts';
 
 class BlogPage extends React.Component {
 
-  componentDidMount() {
-    document.title = 'Blogs';
-  }
-
-  renderBlogs() {
+  static renderBlogs() {
     const arr = [];
     Object.keys(posts).forEach((val, i) => {
       console.log(val, i);
       const asdf = (
-        <Link to={`/blog/${val}`}>
+        <Link key={val} to={`/blog/${val}`}>
           {posts[val].title}
         </Link>
       );
@@ -22,11 +18,15 @@ class BlogPage extends React.Component {
     return arr;
   }
 
+  componentDidMount() {
+    document.title = 'Blog · React Starter';
+  }
+
   render() {
     return (
       <div>
         <h1>Blog</h1>
-        {this.renderBlogs()}
+        {BlogPage.renderBlogs()}
       </div>
     );
   }
