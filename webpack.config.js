@@ -1,4 +1,6 @@
 /**
+ * Code adapted from:
+ *
  * React Static Boilerplate
  * https://github.com/kriasoft/react-static-boilerplate
  *
@@ -32,11 +34,8 @@ const config = {
 
   // The entry point for the bundle
   entry: [
-    /* Material Design Lite (https://getmdl.io) */
-    '!!style-loader!css-loader!react-mdl/extra/material.min.css',
-    'react-mdl/extra/material.min.js',
     /* The main entry point of your JavaScript application */
-    './app/main.js',
+    './app/index.js',
   ],
 
   // Options affecting the output of the compilation
