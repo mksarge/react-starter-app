@@ -6,14 +6,8 @@ class BlogPage extends React.Component {
 
   static renderBlogs() {
     const arr = [];
-    Object.keys(posts).forEach((val, i) => {
-      console.log(val, i);
-      const asdf = (
-        <Link key={val} to={`/blog/${val}`}>
-          {posts[val].title}
-        </Link>
-      );
-      arr.push(asdf);
+    Object.keys(posts).forEach((val) => {
+      arr.push((<Link key={val} to={`/blog/${val}`}>{posts[val].title}</Link>));
     });
     return arr;
   }

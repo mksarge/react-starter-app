@@ -15,12 +15,11 @@ const del = require('del');
 const ejs = require('ejs');
 const webpack = require('webpack');
 
-// TODO: Update configuration settings
 const config = {
-  title: 'React Static Boilerplate',        // Your website title
-  url: 'https://rsb.kriasoft.com',          // Your website URL
-  project: 'react-static-boilerplate',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  title: 'React Starter',
+  url: 'https://react-starter-267fe.firebaseapp.com/',
+  project: 'react-starter-267fe',
+  trackingID: '',
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)

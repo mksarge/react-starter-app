@@ -1,17 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router';
 import css from './Footer.css';
+import config from '../../../config';
 
 const Footer = () => (
   <footer className={css.footer}>
     <p>
-      This site is on&nbsp;
-      <a href="https://github.com/">GitHub</a>.
+      {config.title} is on&nbsp;
+      <a href={config.github}>GitHub</a>.
       <br />
-      <a href="https://github.com/">Docs</a>
-      &nbsp;&middot;&nbsp;
-      <a href="https://github.com/">Report an issue</a>
-      &nbsp;&middot;&nbsp;
-      <a href="https://github.com/">Contribute</a>
+      <a href={`${config.github}#readme`}>Docs</a>
+      &nbsp;&middot;&nbsp;<a href={`${config.github}/issues`}>Report an issue</a>
+      &nbsp;&middot;&nbsp;<a href={`${config.github}/fork`}>Contribute</a>
     </p>
   </footer>
 );
