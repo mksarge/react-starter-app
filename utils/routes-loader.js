@@ -8,6 +8,8 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+/* eslint-disable no-restricted-syntax, import/no-dynamic-require */
+
 const toRegExp = require('path-to-regexp');
 
 function escape(text) {
@@ -42,8 +44,8 @@ module.exports = function routesLoader(source) {
     const keys = [];
     const pattern = toRegExp(route.path, keys);
     const require = route.chunk && route.chunk === 'main' ?
-      module => `Promise.resolve(require('${escape(module)}').default)` :
-      module => `new Promise(function (resolve, reject) {
+      (module) => `Promise.resolve(require('${escape(module)}').default)` :
+      (module) => `new Promise(function (resolve, reject) {
         try {
           require.ensure(['${escape(module)}'], function (require) {
             resolve(require('${escape(module)}').default);

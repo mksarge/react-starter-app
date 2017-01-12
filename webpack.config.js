@@ -1,6 +1,4 @@
 /**
- * Code adapted from:
- *
  * React Static Boilerplate
  * https://github.com/kriasoft/react-static-boilerplate
  *

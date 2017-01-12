@@ -30,7 +30,7 @@ function run(task) {
   console.log(`Starting '${task}'...`);
   return Promise.resolve().then(() => tasks.get(task)()).then(() => {
     console.log(`Finished '${task}' after ${new Date().getTime() - start.getTime()}ms`);
-  }, err => console.error(err.stack));
+  }, (err) => console.error(err.stack));
 }
 
 //
@@ -55,8 +55,8 @@ tasks.set('html', () => {
 // -----------------------------------------------------------------------------
 tasks.set('sitemap', () => {
   const urls = require('./routes.json')
-    .filter(x => !x.path.includes(':'))
-    .map(x => ({ loc: x.path }));
+    .filter((x) => !x.path.includes(':'))
+    .map((x) => ({ loc: x.path }));
   const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
   const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
   const output = render({ config, urls });
@@ -112,7 +112,7 @@ tasks.set('publish', () => {
 tasks.set('start', () => {
   let count = 0;
   global.HMR = !process.argv.includes('--no-hmr'); // Hot Module Replacement (HMR)
-  return run('clean').then(() => new Promise(resolve => {
+  return run('clean').then(() => new Promise((resolve) => {
     const bs = require('browser-sync').create();
     const webpackConfig = require('./webpack.config');
     const compiler = webpack(webpackConfig);
@@ -122,9 +122,9 @@ tasks.set('start', () => {
       publicPath: webpackConfig.output.publicPath,
       stats: webpackConfig.stats,
     });
-    compiler.plugin('done', stats => {
+    compiler.plugin('done', (stats) => {
       // Generate index.html page
-      const bundle = stats.compilation.chunks.find(x => x.name === 'main').files[0];
+      const bundle = stats.compilation.chunks.find((x) => x.name === 'main').files[0];
       const template = fs.readFileSync('./public/index.ejs', 'utf8');
       const render = ejs.compile(template, { filename: './public/index.ejs' });
       const output = render({ debug: true, bundle: `/dist/${bundle}`, config });
