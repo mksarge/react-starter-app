@@ -36,7 +36,7 @@ const config = {
     '!!style-loader!css-loader!react-mdl/extra/material.min.css',
     'react-mdl/extra/material.min.js',
     /* The main entry point of your JavaScript application */
-    './main.js',
+    './app/main.js',
   ],
 
   // Options affecting the output of the compilation
@@ -90,11 +90,7 @@ const config = {
       {
         test: /\.jsx?$/,
         include: [
-          path.resolve(__dirname, './actions'),
-          path.resolve(__dirname, './components'),
-          path.resolve(__dirname, './core'),
-          path.resolve(__dirname, './pages'),
-          path.resolve(__dirname, './main.js'),
+          path.resolve(__dirname, './app'),
         ],
         loader: 'babel-loader',
         options: babelConfig,
