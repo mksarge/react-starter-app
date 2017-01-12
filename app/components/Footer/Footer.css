@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  padding: 20px 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f0f4fa;
+}
+
+.footer a {
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 16px;
+}

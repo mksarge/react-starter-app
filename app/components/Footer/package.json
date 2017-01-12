@@ -1,6 +1,6 @@
 {
-  "name": "Footer",
-  "version": "0.0.0",
+  "name": "footer",
+  "main": "Footer.js",
   "private": true,
-  "main": "./Footer.js"
+  "version": "1.0.0"
 }

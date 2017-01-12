@@ -1,6 +1,6 @@
 {
-  "name": "layout",
-  "main": "Layout.js",
+  "name": "header",
+  "main": "Header.js",
   "private": true,
   "version": "1.0.0"
 }
