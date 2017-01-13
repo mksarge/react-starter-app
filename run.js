@@ -16,9 +16,9 @@ const ejs = require('ejs');
 const webpack = require('webpack');
 
 const config = {
-  title: 'React Starter',
-  url: 'https://react-starter-267fe.firebaseapp.com/',
-  project: 'react-starter-267fe',
+  title: 'React Starter App',
+  url: 'https://react-starter-app.firebaseapp.com/',
+  project: 'react-starter-app',
   trackingID: '',
 };
 

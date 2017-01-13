@@ -4,7 +4,7 @@ import md from './index.md';
 class DocsPage extends React.Component {
 
   componentDidMount() {
-    document.title = 'Docs · React Starter';
+    document.title = 'Docs · React Starter App';
   }
 
   render() {

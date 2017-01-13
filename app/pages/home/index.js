@@ -4,7 +4,7 @@ import md from './index.md';
 class HomePage extends React.Component {
 
   componentDidMount() {
-    document.title = 'Home · React Starter';
+    document.title = 'Home · React Starter App';
   }
 
   render() {

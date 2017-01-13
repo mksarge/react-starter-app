@@ -13,7 +13,7 @@ class BlogPage extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Blog · React Starter';
+    document.title = 'Blog · React Starter App';
   }
 
   render() {

@@ -21,7 +21,7 @@ class Post extends React.Component {
   }
 
   componentDidMount() {
-    document.title = `${this.state.title} · React Starter`;
+    document.title = `${this.state.title} · React Starter App`;
   }
 
   render() {

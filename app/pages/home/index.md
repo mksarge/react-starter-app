@@ -2,9 +2,9 @@
 title: Home
 ---
 
-# React Starter
+# React Starter App
 
-[React Starter][rs] is an minimalist boilerplate for getting static React apps built quickly.
+[React Starter App][rsa] is an minimalist boilerplate for getting static React apps built quickly.
 &nbsp;It builds upon another amazing project:
 
 > ##### [React Static Boilerplate][rsb]
@@ -26,7 +26,7 @@ React Static Boilerplate has a ton of state-of-the-art features; I can't recomme
 
 <hr>
 
-### Why React Starter?
+### Why React Starter App?
 
 While using RSB, I stripped out some core integrations from the original project and found myself
 reusing the bare-bones version enough times that I decided to spawn this project.
@@ -74,13 +74,13 @@ Redux integration was removed because
 
 ### Contribute
 
-Feel free to raise an [issue][rs-issues] or [pull request][rs-pulls] on the [GitHub page][rs].
+Feel free to raise an [issue][issues] or [pull request][pulls] on the [GitHub page][rs].
 
 <hr>
 
 ### License
 
-> ###### React Starter
+> ###### React Starter App
 > Copyright © 2017-present [@mksarge][mksarge]
 > <br>
 > <br>
@@ -88,7 +88,7 @@ Feel free to raise an [issue][rs-issues] or [pull request][rs-pulls] on the [Git
 > Copyright © 2015-present Kriasoft, LLC.
 
 [mksarge]: <https://github.com/mksarge/>
-[rs]: <https://github.com/mksarge/react-starter>
-[rs-issues]: <https://github.com/mksarge/react-starter/issues>
-[rs-pulls]: <https://github.com/mksarge/react-starter/pulls>
+[rsa]: <https://github.com/mksarge/react-starter-app>
+[issues]: <https://github.com/mksarge/react-starter-app/issues>
+[pulls]: <https://github.com/mksarge/react-starter-app/pulls>
 [rsb]: <https://github.com/kriasoft/react-static-boilerplate>

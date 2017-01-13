@@ -1,6 +1,6 @@
                             The MIT License
 
-React Starter
+React Starter App
 Copyright (c) 2017-present Michael Sargent. All rights reserved.
 
 React Static Boilerplate
