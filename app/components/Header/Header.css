@@ -2,12 +2,11 @@
   text-align: center;
   cursor: pointer;
   background: #cfd8fa;
-  background-image: linear-gradient(180deg, #cfd8fa, #fff);
 }
 
 .header h1 {
   padding: 5px 0;
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 100;
   color: #347;
   text-shadow: 2px 2px 3px #89f;

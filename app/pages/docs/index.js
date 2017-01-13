@@ -1,4 +1,5 @@
 import React from 'react';
+import md from './index.md';
 
 class DocsPage extends React.Component {
 
@@ -8,9 +9,7 @@ class DocsPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Docs</h1>
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: md.html }} />
     );
   }
 

@@ -22,8 +22,6 @@
   margin: 0;
   color: var(--color);
   letter-spacing: 0.02em;
-  font-weight: 300;
-  font-size: 15em;
   line-height: 1;
 }
 
@@ -31,16 +29,12 @@
   padding-bottom: 0.5em;
   color: var(--color);
   letter-spacing: 0.02em;
-  font-weight: 400;
-  font-size: 2em;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1em;
 }
 
 .text {
   padding-bottom: 0;
   color: color(var(--color) alpha(50%));
-  font-size: 1.125em;
   line-height: 1.5em;
 }
 
@@ -52,7 +46,6 @@
 
   .title {
     margin: 0 0 0.3em;
-    font-size: 1.5em;
   }
 }
 
@@ -62,10 +55,8 @@
   }
 
   .code {
-    font-size: 10em;
   }
 
   .title {
-    font-size: 1.5em;
   }
 }

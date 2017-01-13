@@ -18,7 +18,7 @@ const HighlightedLink = (props) => {
       className={css.navblock}
       style={{
         background: match ? '#a0c0ff' : 'none',
-        color: match ? 'white' : '#303080',
+        color: match ? 'white' : '#24b',
       }}
       to={props.to}
     >

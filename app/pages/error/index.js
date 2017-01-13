@@ -17,8 +17,8 @@ class ErrorPage extends React.Component {
     return (
       <div className={css.container}>
         <main className={css.content}>
-          <h1 className={css.code}>code</h1>
-          <p className={css.title}>title</p>
+          <h1 className={css.code}>404</h1>
+          <p className={css.title}>Page Not Found</p>
           <p className={css.text}>
             The page you&apos;re looking for does not exist or an another error occurred.
           </p>
