@@ -16,17 +16,16 @@ class ErrorPage extends React.Component {
   render() {
     return (
       <div className={css.container}>
-        <main className={css.content}>
-          <h1 className={css.code}>404</h1>
-          <p className={css.title}>Page Not Found</p>
-          <p className={css.text}>
-            The page you&apos;re looking for does not exist or an another error occurred.
-          </p>
-          <p className={css.text}>
-            <a href="/" onClick={ErrorPage.goBack}>Go back</a>, or head over to the&nbsp;
-            <Link to="/">home page</Link> to choose a new direction.
-          </p>
-        </main>
+        <div className={css.error}>
+          <h1>404</h1>
+          <p>Page Not Found</p>
+        </div>
+        <p>
+          The page you&apos;re looking for does not exist.
+          <br />
+          <a href="/" onClick={ErrorPage.goBack}>Go back</a>
+          , or head to the &nbsp;<Link to="/">home page</Link>.
+        </p>
       </div>
     );
   }

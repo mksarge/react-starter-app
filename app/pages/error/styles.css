@@ -1,62 +1,19 @@
-:root {
-  --color: #607d8b;
-}
-
 .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
   width: 100%;
-  height: 100%;
+  max-width: 300px;
+  padding-top: 10%;
+  margin: 0 auto;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
-.content {
-  padding-bottom: 80px;
-}
-
-.code {
-  margin: 0;
-  color: var(--color);
-  letter-spacing: 0.02em;
-  line-height: 1;
-}
-
-.title {
-  padding-bottom: 0.5em;
-  color: var(--color);
-  letter-spacing: 0.02em;
+.error h1 {
+  font-size: 3em;
   line-height: 1em;
+  color: #607d8b;
 }
 
-.text {
-  padding-bottom: 0;
-  color: color(var(--color) alpha(50%));
-  line-height: 1.5em;
-}
-
-@media only screen and (max-width: 280px) {
-  .container,
-  .text {
-    width: 95%;
-  }
-
-  .title {
-    margin: 0 0 0.3em;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .content {
-    padding: 0 16px;
-  }
-
-  .code {
-  }
-
-  .title {
-  }
+.error p {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #607d8b;
 }
