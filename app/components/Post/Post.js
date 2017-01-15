@@ -1,34 +1,47 @@
 import React, { PropTypes } from 'react';
-import { browserHistory } from 'react-router';
+import { browserHistory, Link } from 'react-router';
 import css from './Post.css';
-import posts from '../../../posts';
+import { posts } from '../../../config';
 
 class Post extends React.Component {
   constructor() {
     super();
-    this.state = {
-      title: null,
-      html: null,
-    };
+    this.state = { post: '' };
   }
 
   componentWillMount() {
-    const post = posts[this.props.params.postId];
+    // use the url query string to find the matching markdown post
+    const post = posts.find((val) => val.url === this.props.params.postId);
 
-    // if post cannot be loaded, redirect to /blog
+    // if the post was not found, redirect to /blog
     if (!post) browserHistory.push('/blog');
-    else this.setState({ title: post.title, html: post.html });
+
+    // if the post was loaded successfully, save it in the state
+    else this.setState({ post });
   }
 
   componentDidMount() {
-    document.title = `${this.state.title} · React Starter App`;
+    document.title = `${this.state.post.title} · React Starter App`;
   }
 
   render() {
     return (
-      <div className={css.container}>
-        <h1>{this.state.title}</h1>
-        <div className={css.subcontainer} dangerouslySetInnerHTML={{ __html: this.state.html }} />
+      <div>
+        <div className={css.return}>
+          <Link to="/blog">← Return to Posts</Link>
+        </div>
+        <div className={css.header1}>
+          <h1>{this.state.post.title}</h1>
+          <h2>{this.state.post.subtitle}</h2>
+        </div>
+        <div className={css.header2}>
+          <p>{this.state.post.date}</p>
+          <p>Tags: {this.state.post.tags}</p>
+        </div>
+        <hr />
+        <div
+          className={css.post}
+          dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
       </div>
     );
   }

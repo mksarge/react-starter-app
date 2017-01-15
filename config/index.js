@@ -1,6 +1,8 @@
+// declare your active blog posts here
+import * as post1 from '../posts/post1.md';
+
 const env = process.env.NODE_ENV || 'development';
 
-// config settings for development environment
 const config = {
   env,
   title: 'React Starter App',
@@ -8,14 +10,14 @@ const config = {
   github: 'https://github.com/mksarge/react-starter-app',
 };
 
+const posts = [
+  post1,
+];
+
 // alternative settings for test environment
-if (env === 'test') {
-  //
-}
+// if (env === 'test') { }
 
 // alternative settings for production environment
-if (env === 'production') {
-  //
-}
+// if (env === 'production') { }
 
-export default config;
+export { config, posts };

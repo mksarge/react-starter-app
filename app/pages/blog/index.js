@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
-import posts from '../../../posts';
+import { posts } from '../../../config';
 
 class BlogPage extends React.Component {
 
   static renderBlogs() {
-    const arr = [];
-    Object.keys(posts).forEach((val) => {
-      arr.push((<Link key={val} to={`/blog/${val}`}>{posts[val].title}</Link>));
-    });
-    return arr;
+    return posts
+      .map((val) => (
+        <div key={val.url}>
+          <Link to={`/blog/${val.url}`}>{val.title}</Link>
+          <br /><br />
+        </div>));
   }
 
   componentDidMount() {

@@ -3,7 +3,7 @@ import Header from '../Header';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import css from './Layout.css';
-import config from '../../../config';
+import { config } from '../../../config';
 
 const Layout = (props) => (
   <div className={css.page} >
