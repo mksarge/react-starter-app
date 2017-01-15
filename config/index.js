@@ -1,5 +1,6 @@
 // declare your active blog posts here
-import * as post1 from '../posts/post1.md';
+import * as post1 from '../posts/sample-post-1.md';
+import * as post2 from '../posts/sample-post-2.md';
 
 const env = process.env.NODE_ENV || 'development';
 
@@ -12,6 +13,7 @@ const config = {
 
 const posts = [
   post1,
+  post2,
 ];
 
 // alternative settings for test environment
