@@ -1,15 +1,14 @@
 .header {
   text-align: center;
   cursor: pointer;
-  background: #cfd8fa;
+  background: #236;
 }
 
 .header h1 {
   padding: 5px 0;
   font-size: 3.5em;
-  font-weight: 100;
-  color: #347;
-  text-shadow: 2px 2px 3px #89f;
+  font-weight: 300;
+  color: #fff;
 }
 
 @media screen and (min-width: 980px) {
