@@ -1,21 +1,27 @@
-.container {
+.return {
   margin-bottom: 20px;
-  border: 1px solid #aabbfe;
-  border-radius: 10px;
-  background: #ccddfe;
+}
+
+.header1 {
+  padding: 5px;
   text-align: center;
 }
 
-.subcontainer {
-  margin: 0 5px 5px;
-  padding: 10px;
-  border: 1px solid #aabbfe;
-  border-radius: 10px;
-  background: white;
+.header1 h1 {
+  color: #347;
+  font-size: 3em;
 }
 
-.subcontainer a {
-  padding: 0 6px;
-  border-radius: 10px;
-  background: #def;
+.header1 h2 {
+  font-style: italic;
+  color: slategrey;
+}
+
+.header2 p {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.post {
+  padding-top: 20px;
 }
