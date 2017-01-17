@@ -17,9 +17,14 @@ const webpack = require('webpack');
 
 const config = {
   title: 'React Starter App',
-  url: 'https://react-starter-app.firebaseapp.com/',
+  url: 'https://react-starter-app.firebaseapp.com',
   project: 'react-starter-app',
   trackingID: '',
+  routes: [
+    '/',
+    '/docs',
+    '/blog',
+  ],
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
@@ -53,9 +58,7 @@ tasks.set('html', () => {
 // Generate sitemap.xml
 // -----------------------------------------------------------------------------
 tasks.set('sitemap', () => {
-  const urls = require('./routes.json')
-    .filter((x) => !x.path.includes(':'))
-    .map((x) => ({ loc: x.path }));
+  const urls = config.routes;
   const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
   const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
   const output = render({ config, urls });
