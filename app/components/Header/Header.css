@@ -12,6 +12,21 @@
   outline: none;
 }
 
+.ribbon img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .ribbon img {
+    display: inherit;
+    max-height: 90px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .text a {
     font-size: 3em;
@@ -25,5 +40,9 @@
 @media screen and (min-width: 980px) {
   .text a {
     font-size: 3.5em;
+  }
+
+  .ribbon img {
+    max-height: 100%;
   }
 }
