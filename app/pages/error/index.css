@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status {
+  background: #f0f4fa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.status h1 {
+  margin-bottom: 10px;
+  font-size: 3.5em;
+  line-height: 1em;
+  color: #24b;
+}
+
+.status p {
+  font-size: 2em;
+  line-height: 1em;
+  color: #24b;
+}

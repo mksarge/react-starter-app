@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { posts } from '../../../config';
+import md from './index.md';
+
+import css from './index.css';
 
 class BlogPage extends React.Component {
 
-  static renderBlogs() {
-    return posts
-      .map((val) => (
-        <div key={val.url}>
-          <Link to={`/blog/${val.url}`}>{val.title}</Link>
-          <br /><br />
-        </div>));
+  static renderPosts() {
+    return posts.map((post) => (
+      <p className={css.links} key={post.url}>
+        <Link to={`/blog/${post.url}`}>{post.title}</Link>
+      </p>));
   }
 
   componentDidMount() {
@@ -20,8 +21,8 @@ class BlogPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Posts</h1>
-        {BlogPage.renderBlogs()}
+        <div dangerouslySetInnerHTML={{ __html: md.html }} />
+        {BlogPage.renderPosts()}
       </div>
     );
   }
