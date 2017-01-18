@@ -1,4 +1,6 @@
 /**
+ * Adapted from:
+ *
  * React Static Boilerplate
  * https://github.com/kriasoft/react-static-boilerplate
  *
@@ -8,7 +10,11 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+/* eslint no-unused-expressions: ["error", { "allowShortCircuit": true }] */
+
 const MarkdownIt = require('markdown-it');
+const MarkdownItAnchor = require('markdown-it-anchor');
+const MarkdownItTableOfContents = require('markdown-it-table-of-contents');
 const hljs = require('highlight.js');
 const fm = require('front-matter');
 
@@ -31,6 +37,11 @@ module.exports = function markdownLoader(source) {
 
       return '';
     },
+  });
+
+  md.use(MarkdownItAnchor);
+  md.use(MarkdownItTableOfContents, {
+    includeLevel: [1, 2, 3],
   });
 
   const frontmatter = fm(source);
