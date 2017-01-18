@@ -2,7 +2,7 @@ const env = process.env.NODE_ENV || 'development';
 
 const config = {
   env,
-  title: 'React Starter App',
+  header: 'React Starter App',
   project: 'react-starter-app',
   github: 'https://github.com/mksarge/react-starter-app',
 };

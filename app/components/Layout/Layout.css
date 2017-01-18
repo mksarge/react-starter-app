@@ -1,14 +1,34 @@
-.page {
+.container {
   position: relative;
   min-height: 100%;
 }
 
-.body {
+.page {
   position: relative;
   height: auto;
   width: 90%;
   max-width: 1000px;
-  padding: 15px 0 150px;
+  padding-bottom: 150px;
   margin: 0 auto;
   text-align: left;
+}
+
+.path {
+  width: 50%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  background: #f0f4fa;
+  background: linear-gradient(90deg, #f0f4fa, white);
+  border-left: solid #cfd8fa 10px;
+}
+
+.path a {
+  padding-left: 15px;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #236;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
 }

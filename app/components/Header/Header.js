@@ -1,27 +1,23 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 
 import React, { PropTypes } from 'react';
-import { browserHistory } from 'react-router';
+import { Link } from 'react-router';
 import css from './Header.css';
 
-function redirect(e) {
-  e.preventDefault();
-  browserHistory.push('/');
-}
-
 const Header = (props) => (
-  <div className={css.header} onClick={redirect} >
-    <h1>{props.title}</h1>
+  <div className={css.container}>
+    <div className={css.text}>
+      <Link to="/">{props.header}</Link>
+    </div>
   </div>
 );
 
 Header.propTypes = {
-  title: PropTypes.string,
+  header: PropTypes.string,
 };
 
 Header.defaultProps = {
-  title: '',
+  header: '',
 };
-
 
 export default Header;
