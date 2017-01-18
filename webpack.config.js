@@ -120,25 +120,7 @@ const config = {
       },
       {
         test: /\.json$/,
-        exclude: [
-          path.resolve(__dirname, './routes.json'),
-        ],
         loader: 'json-loader',
-      },
-      {
-        test: /\.json$/,
-        include: [
-          path.resolve(__dirname, './routes.json'),
-        ],
-        use: [
-          {
-            loader: 'babel-loader',
-            options: babelConfig,
-          },
-          {
-            loader: path.resolve(__dirname, './utils/routes-loader.js'),
-          },
-        ],
       },
       {
         test: /\.md$/,
