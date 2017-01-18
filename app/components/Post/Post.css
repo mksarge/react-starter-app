@@ -9,7 +9,7 @@
 
 .header1 h1 {
   color: #347;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .header1 h2 {
@@ -18,6 +18,21 @@
 }
 
 .header2 p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: left;
+}
+
+.date {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 10px;
+  background: #f0f4fa;
+}
+
+.tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 10px;
+  background: #cfd8fa;
+  border-radius: 5px;
 }

@@ -4,6 +4,11 @@ import css from './Post.css';
 import { posts } from '../../../config';
 
 class Post extends React.Component {
+  static renderTags(tags) {
+    const arr = tags.split(', ');
+    return arr.map((tag) => <p key={tag} className={css.tag}>{tag}</p>);
+  }
+
   constructor() {
     super();
     this.state = { post: '' };
@@ -35,13 +40,18 @@ class Post extends React.Component {
           <h2>{this.state.post.subtitle}</h2>
         </div>
         <div className={css.header2}>
-          <p>{this.state.post.date}</p>
-          <p>Tags: {this.state.post.tags}</p>
+          <div>
+            <p>Posted:</p>
+            <p className={css.date}>{this.state.post.date}</p>
+            <p>Tags:</p>
+            {Post.renderTags(this.state.post.tags)}
+          </div>
         </div>
         <hr />
         <div
           className={css.post}
-          dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
+          dangerouslySetInnerHTML={{ __html: this.state.post.html }}
+        />
       </div>
     );
   }
