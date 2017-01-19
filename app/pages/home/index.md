@@ -4,91 +4,83 @@ title: Home
 
 # React Starter App
 
-[React Starter App][rsa] is an minimalist boilerplate for getting static React apps built quickly.
-&nbsp;It builds upon another amazing project:
+### About
 
-> ##### [React Static Boilerplate][rsb]
-> by [@koistya](https://github.com/koistya)
-> <br>
-> <br>
-> React Static Boilerplate (RSB) is a boilerplate and tooling for creating modern stand-alone
-web applications (aka SPAs) for a serverless architecture. RSB significantly reduces cost by
-eliminating the need for servers such as EC2 instances because the entire site can be hosted
-directly from CDN (Firebase, GitHub Pages, Amazon S3, or other similar cloud storage). Sites
-built with RSB can be fully functional with REST API or GraphQL calls to micro-services such
-as Amazon Lambda, Azure Functions, or dynamic Docker endpoints hosted on DigitalOcean. RSB
-demonstrates how to use component-based UI development approach with best of breed technologies
-including React, Redux, Babel, Webpack, Browsersync, React Hot Loader and more.
+Welcome to **React Starter App** - an open-source boilerplate for building and deploying
+[static][swa] React web apps quickly. Use it to kickstart your next project, landing page,
+documentation site, or personal blog! It's also a great place for beginners to learn about
+building modern, static, single page applications with React.
 
 <br>
 
-React Static Boilerplate has a ton of state-of-the-art features; I can't recommend it enough.
-
-<hr>
-
-### Why React Starter App?
-
-While using RSB, I stripped out some core integrations from the original project and found myself
-reusing the bare-bones version enough times that I decided to spawn this project.
+**Read more in the [docs](/docs).**
 
 <br>
 
-Major departures from RSB:
+### Getting Started
 
-1. [Redux integration removed](#redux)
-1. [React Router used instead of first-party solution]()
-1. [React-MDL integration removed]()
-1. [CSS reset]()
+1. Install React Starter App
+```
+git clone https://github.com/mksarge/react-starter-app
+npm install
+```
 
-Notes and design thoughts for each topic are listed below.
+2. Lint with [ESlint][eslint] and [Stylelint][stylelint]
+```
+npm run lint
+```
 
-<hr>
+3. Test with [Mocha][mocha] and [Enzyme][enzyme]
+```
+npm run test
+```
 
-### Features
+4. Start development build with [Webpack 2][webpack], [Babel][babel], and
+[Hot Module Replacement][hmr]
+```
+npm run start
+```
 
-<a href="#redux"></a>
-
-###### Redux integration removed
-
-Redux integration was removed because
-
-<br>
-
-###### React Router used instead of first-party solution
-
-Redux integration was removed because
-
-<br>
-
-###### React-MDL integration removed
-
-Redux integration was removed because
+5. Deploy to Firebase
+```
+npm run publish
+```
 
 <br>
 
-###### CSS reset
+### Resources
 
-Redux integration was removed because
+New to React? [Learn](docs#concepts-and-technologies) about the
+[technologies](/docs#core-technologies) used by React Starter App, or **build it from scratch**
+with the [step-by-step tutorial](/docs#tutorial).
 
-<hr>
+<br>
 
 ### Contribute
 
-Feel free to raise an [issue][issues] or [pull request][pulls] on the [GitHub page][rs].
+React Starter App is on [GitHub][github] - feel free to fork it, raise an [issue][issues] or
+send a [pull request][pulls]!
 
-<hr>
+<br>
 
 ### License
 
-> ###### React Starter App
-> Copyright © 2017-present [@mksarge][mksarge]
-> <br>
-> <br>
-> ###### React Static Boilerplate
-> Copyright © 2015-present Kriasoft, LLC.
+> ##### React Starter App
+>
+> © 2017-present [mksarge][mksarge]
+>
+> [MIT License][license]
 
-[mksarge]: <https://github.com/mksarge/>
-[rsa]: <https://github.com/mksarge/react-starter-app>
+[swa]: <https://staticapps.org/>
+[eslint]: <http://eslint.org/>
+[stylelint]: <http://stylelint.io/>
+[mocha]: <https://mochajs.org/>
+[enzyme]: <http://airbnb.io/enzyme/>
+[webpack]: <https://webpack.js.org/>
+[babel]: <https://babeljs.io/>
+[hmr]: <https://webpack.js.org/guides/hmr-react/>
+[github]: <https://github.com/mksarge/react-starter-app>
 [issues]: <https://github.com/mksarge/react-starter-app/issues>
 [pulls]: <https://github.com/mksarge/react-starter-app/pulls>
-[rsb]: <https://github.com/kriasoft/react-static-boilerplate>
+[mksarge]: <https://github.com/mksarge/>
+[license]: <https://github.com/mksarge/react-starter-app/blob/master/LICENSE.txt>
