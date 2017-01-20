@@ -1,23 +1,4 @@
-.container {
+.layout {
   position: relative;
   min-height: 100%;
-}
-
-.path {
-  width: 50%;
-  margin-bottom: 15px;
-  background: #f0f4fa;
-  background: linear-gradient(90deg, #f0f4fa, white);
-  border-left: solid #cfd8fa 10px;
-}
-
-.path a {
-  padding-left: 15px;
-  text-align: center;
-  font-size: 2.2em;
-  font-weight: 500;
-  color: #236;
-  text-transform: uppercase;
-  text-decoration: none;
-  outline: none;
 }
