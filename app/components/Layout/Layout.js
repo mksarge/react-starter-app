@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import Header from '../Header';
-import NavBar, { getRootPath } from '../NavBar';
+import NavBar from '../NavBar';
 import Footer from '../Footer';
 import css from './Layout.css';
 import { config } from '../../../config';
+import { getRootPath } from '../../utils';
 
 const Layout = (props) => {
   const path = getRootPath();

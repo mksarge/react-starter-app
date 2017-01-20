@@ -1,21 +1,11 @@
 import React, { PropTypes } from 'react';
-import { browserHistory, Link } from 'react-router';
+import { Link } from 'react-router';
 import css from './Navbar.css';
-
-export const getRootPath = () => {
-  // get url pathname without leading '/'
-  const path = browserHistory.getCurrentLocation().pathname.slice(1);
-
-  // check if there is another '/' in the url
-  const index = path.indexOf('/');
-
-  // if true, take only the first portion
-  return (index !== -1) ? path.slice(0, index) : path;
-};
+import { getRootPath } from '../../utils';
 
 const HighlightedLink = (props) => {
   // check if the root url matches one of the three nav links
-  const match = props.to === `/${getRootPath()}`;
+  const match = props.title === getRootPath();
 
   // if url matches, highlight the link
   const style = {
@@ -38,9 +28,9 @@ HighlightedLink.defaultProps = {
 
 const Navbar = () => (
   <div className={css.navbar} >
-    <HighlightedLink to="/" title="Home" />&nbsp;
-    <HighlightedLink to="/docs" title="Docs" />&nbsp;
-    <HighlightedLink to="/blog" title="Blog" />&nbsp;
+    <HighlightedLink to="/" title="home" />&nbsp;
+    <HighlightedLink to="/docs" title="docs" />&nbsp;
+    <HighlightedLink to="/blog" title="blog" />&nbsp;
   </div>
 );
 export default Navbar;
