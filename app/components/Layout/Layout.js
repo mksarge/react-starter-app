@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import Header from '../Header';
-import NavBar from '../NavBar';
+import Navbar from '../Navbar';
 import Footer from '../Footer';
 import css from './Layout.css';
 import { config } from '../../../config';
@@ -12,7 +12,7 @@ const Layout = (props) => {
   return (
     <div className={css.container} >
       <Header header={config.header} />
-      <NavBar />
+      <Navbar />
       <div className={css.page} >
         <div className={css.path}>
           <Link to={`/${path}`}>{path || 'home'}</Link>
