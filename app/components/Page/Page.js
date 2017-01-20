@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import css from './Page.css';
+import { getRootPath } from '../../utils';
 
 class Page extends React.Component {
   componentDidMount() {
@@ -9,6 +10,7 @@ class Page extends React.Component {
   render() {
     return (
       <div className={css.page} >
+        <p className={css.title}>{getRootPath()}</p>
         {this.props.children}
       </div>);
   }
