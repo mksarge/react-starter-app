@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { posts } from '../../../config';
+import posts from '../../posts';
 import md from './index.md';
 import css from './index.css';
 

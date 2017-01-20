@@ -3,7 +3,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import css from './Header.css';
-import { config } from '../../../config';
+import config from '../../env';
 
 const Header = (props) => (
   <div className={css.container}>

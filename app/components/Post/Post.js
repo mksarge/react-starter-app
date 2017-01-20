@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { browserHistory, Link } from 'react-router';
 import css from './Post.css';
-import { posts } from '../../../config';
+import posts from '../../posts';
 
 class Post extends React.Component {
   static renderTags(tags) {

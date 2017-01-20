@@ -4,7 +4,7 @@ import Header from '../Header';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import css from './Layout.css';
-import { config } from '../../../config';
+import config from '../../env';
 import { getRootPath } from '../../utils';
 
 const Layout = (props) => {
