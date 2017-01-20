@@ -1,0 +1,58 @@
+.octocorner {
+  height: 70px;
+}
+
+.octosvg {
+  height: inherit;
+  width: auto;
+  fill: #fff;
+  color: #236;
+  position: absolute;
+  top: 0;
+  border: 0;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
+.octoarm {
+  transform-origin: 130px 106px;
+}
+
+.octocorner:hover .octoarm {
+  animation: octowave 560ms ease-in-out;
+}
+
+@media screen and (min-width: 450px) {
+  .octocorner {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .octocorner {
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .octocorner {
+    height: 125px;
+  }
+}
+
+@keyframes octowave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
