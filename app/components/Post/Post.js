@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 import { browserHistory, Link } from 'react-router';
-import css from './Post.css';
 import posts from '../../posts';
+import Page from '../Page';
+import css from './Post.css';
+
+const renderTags = (tags) => {
+  const arr = tags.split(', ');
+  return arr.map((tag) => <p key={tag} className={css.tag}>{tag}</p>);
+};
 
 class Post extends React.Component {
-  static renderTags(tags) {
-    const arr = tags.split(', ');
-    return arr.map((tag) => <p key={tag} className={css.tag}>{tag}</p>);
-  }
-
   constructor() {
     super();
     this.state = { post: '' };
@@ -18,20 +19,13 @@ class Post extends React.Component {
     // use the url query string to find the matching markdown post
     const post = posts.find((val) => val.url === this.props.params.postId);
 
-    // if the post was not found, redirect to /blog
-    if (!post) browserHistory.push('/blog');
-
-    // if the post was loaded successfully, save it in the state
-    else this.setState({ post });
-  }
-
-  componentDidMount() {
-    document.title = `${this.state.post.title} · React Starter App`;
+    // if the post was not found, redirect to /blog; else, set state
+    (!post) ? browserHistory.push('/blog') : this.setState({ post }); // eslint-disable-line no-unused-expressions
   }
 
   render() {
     return (
-      <div>
+      <Page title={this.state.post.title}>
         <div className={css.return}>
           <Link to="/blog">← Return to Posts</Link>
         </div>
@@ -44,7 +38,7 @@ class Post extends React.Component {
             <p>Posted:</p>
             <p className={css.date}>{this.state.post.date}</p>
             <p>Tags:</p>
-            {Post.renderTags(this.state.post.tags)}
+            {this.state.post.tags && renderTags(this.state.post.tags)}
           </div>
         </div>
         <hr />
@@ -52,7 +46,7 @@ class Post extends React.Component {
           className={css.post}
           dangerouslySetInnerHTML={{ __html: this.state.post.html }}
         />
-      </div>
+      </Page>
     );
   }
 }
