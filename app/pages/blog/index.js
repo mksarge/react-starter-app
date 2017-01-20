@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 import posts from '../../posts';
-import md from './index.md';
 import css from './index.css';
 
-class BlogPage extends React.Component {
+const renderPosts = () => posts.map((post) => (
+  <li className={css.links} key={post.url}>
+    <Link to={`/blog/${post.url}`}>{post.title}</Link>
+  </li>));
 
-  static renderPosts() {
-    return posts.map((post) => (
-      <li className={css.links} key={post.url}>
-        <Link to={`/blog/${post.url}`}>{post.title}</Link>
-      </li>));
-  }
+class BlogPage extends React.Component {
 
   componentDidMount() {
     document.title = 'Blog · React Starter App';
@@ -20,9 +17,10 @@ class BlogPage extends React.Component {
   render() {
     return (
       <div>
-        <div dangerouslySetInnerHTML={{ __html: md.html }} />
+        <h1>Posts</h1>
+        <h3>January 2017</h3>
         <ul>
-          {BlogPage.renderPosts()}
+          {renderPosts()}
         </ul>
       </div>
     );
