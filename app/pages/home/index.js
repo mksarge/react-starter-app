@@ -1,18 +1,11 @@
 import React from 'react';
+import Page from '../../components/Page';
 import md from './index.md';
 
-class HomePage extends React.Component {
-
-  componentDidMount() {
-    document.title = 'Home · React Starter App';
-  }
-
-  render() {
-    return (
-      <div dangerouslySetInnerHTML={{ __html: md.html }} />
-    );
-  }
-
-}
+const HomePage = () => (
+  <Page title="Home">
+    <div dangerouslySetInnerHTML={{ __html: md.html }} />
+  </Page>
+);
 
 export default HomePage;

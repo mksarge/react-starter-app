@@ -13,13 +13,11 @@ const Layout = (props) => {
     <div className={css.container} >
       <Header header={config.header} />
       <Navbar />
-      <div className={css.page} >
-        <div className={css.path}>
-          <Link to={`/${path}`}>{path || 'home'}</Link>
-        </div>
-        <div>
-          {props.children}
-        </div>
+      <div className={css.path}>
+        <Link to={`/${path}`}>{path || 'home'}</Link>
+      </div>
+      <div>
+        {props.children}
       </div>
       <Footer />
     </div>

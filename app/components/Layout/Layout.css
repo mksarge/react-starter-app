@@ -3,16 +3,6 @@
   min-height: 100%;
 }
 
-.page {
-  position: relative;
-  height: auto;
-  width: 90%;
-  max-width: 1000px;
-  padding-bottom: 150px;
-  margin: 0 auto;
-  text-align: left;
-}
-
 .path {
   width: 50%;
   margin-bottom: 15px;

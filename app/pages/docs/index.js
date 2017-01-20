@@ -1,18 +1,11 @@
 import React from 'react';
+import Page from '../../components/Page';
 import md from './index.md';
 
-class DocsPage extends React.Component {
-
-  componentDidMount() {
-    document.title = 'Docs · React Starter App';
-  }
-
-  render() {
-    return (
-      <div dangerouslySetInnerHTML={{ __html: md.html }} />
-    );
-  }
-
-}
+const DocsPage = () => (
+  <Page title="Docs">
+    <div dangerouslySetInnerHTML={{ __html: md.html }} />
+  </Page>
+);
 
 export default DocsPage;

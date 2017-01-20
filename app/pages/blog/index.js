@@ -1,31 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router';
-import posts from '../../posts';
+import Page from '../../components/Page';
 import css from './index.css';
+import posts from '../../posts';
 
 const renderPosts = () => posts.map((post) => (
   <li className={css.links} key={post.url}>
     <Link to={`/blog/${post.url}`}>{post.title}</Link>
   </li>));
 
-class BlogPage extends React.Component {
-
-  componentDidMount() {
-    document.title = 'Blog · React Starter App';
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Posts</h1>
-        <h3>January 2017</h3>
-        <ul>
-          {renderPosts()}
-        </ul>
-      </div>
-    );
-  }
-
-}
+const BlogPage = () => (
+  <Page title="Blog">
+    <h1>Posts</h1>
+    <h3>January 2017</h3>
+    <ul>
+      {renderPosts()}
+    </ul>
+  </Page>
+);
 
 export default BlogPage;
