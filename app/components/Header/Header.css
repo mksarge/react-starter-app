@@ -1,15 +1,26 @@
-.container {
+.header {
   text-align: center;
   background: #236;
+  padding: 0;
 }
 
-.text a {
-  padding: 5px 0;
+.header2 {
+  padding: 50px 0;
+}
+
+.title a {
   font-size: 2.5em;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
   outline: none;
+}
+
+.logo {
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+  animation: logo-spin infinite 12s linear;
 }
 
 .ribbon img {
@@ -21,15 +32,35 @@
 }
 
 @media screen and (min-width: 450px) {
+  .header2 {
+    padding: 50px 0;
+  }
+
+  .title a {
+    font-size: 3em;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
   .ribbon img {
-    display: inherit;
+    display: initial;
     max-height: 90px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .text a {
-    font-size: 3em;
+  .header2 {
+    padding: 70px 0;
+  }
+
+  .title a {
+    font-size: 4em;
+  }
+
+  .logo {
+    height: 130px;
   }
 
   .ribbon img {
@@ -38,11 +69,28 @@
 }
 
 @media screen and (min-width: 980px) {
-  .text a {
-    font-size: 3.5em;
+  .header {
+    transition: padding 0.5s;
+  }
+
+  .header2 {
+    padding: 100px 0;
+  }
+
+  .title a {
+    font-size: 5em;
+  }
+
+  .logo {
+    height: 160px;
   }
 
   .ribbon img {
     max-height: 100%;
   }
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
