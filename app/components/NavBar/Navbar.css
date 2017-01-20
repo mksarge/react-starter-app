@@ -8,13 +8,25 @@
   outline: none;
   display: inline-block;
   padding: 0 25px;
-  margin: 0 10px;
+  margin: 0;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 450px) {
+  .navblock {
+    padding: 0 25px;
+    margin: 0 5px;
+  }
 }
 
 @media screen and (min-width: 980px) {
   .navbar {
     text-align: right;
     padding-right: 50px;
+  }
+
+  .navblock {
+    padding: 0 25px;
+    margin: 0 10px;
   }
 }
