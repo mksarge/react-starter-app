@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
 import css from './Page.css';
+import config from '../../config';
 import { getRootPath } from '../../utils';
 
 class Page extends React.Component {
   componentDidMount() {
-    document.title = `${this.props.title} · React Starter App`;
+    document.title = `${this.props.title} · ${config.name}`;
   }
 
   render() {

@@ -1,15 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import css from './Navbar.css';
+import config from '../../config';
 import { getRootPath } from '../../utils';
 
-const links = [
-  { path: '/', name: 'home' },
-  { path: '/docs', name: 'docs' },
-  { path: '/blog', name: 'blog' },
-];
-
-const renderLinks = () => links.map((link) => {
+const renderLinks = () => config.routes.map((link) => {
   const currentPath = getRootPath();
   return (<Link
     key={link.name}

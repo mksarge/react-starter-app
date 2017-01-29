@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import Corner from './Corner';
 import css from './Header.css';
-import config from '../../env';
+import config from '../../config';
 import { getRootPath } from '../../utils';
 
 const Header = (props) => {
