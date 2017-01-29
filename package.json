@@ -85,12 +85,6 @@
       "transform-runtime"
     ]
   },
-  "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "string-quotes": "single"
-    }
-  },
   "scripts": {
     "eslint": "eslint app test utils run.js webpack.config.js",
     "stylelint": "stylelint \"app/**/*.css\" \"public/index.css\"",
