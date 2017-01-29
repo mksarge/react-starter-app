@@ -1,5 +1,5 @@
 /**
- * React Static Boilerplate
+ * Adapted from React Static Boilerplate
  * https://github.com/kriasoft/react-static-boilerplate
  *
  * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
