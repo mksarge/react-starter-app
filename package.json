@@ -1,16 +1,29 @@
 {
-  "name": "react-starter",
-  "version": "0.0.1",
+  "name": "react-starter-app",
+  "version": "1.0.0",
+  "author": "Michael Sargent",
+  "description": "boilerplate for static react applications",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "static",
+    "react",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "homepage": "https://github.com/mksarge/react-starter-app",
+    "bugs": "https://github.com/mksarge/react-starter-app/issues"
+  },
   "engines": {
     "node": ">=6",
     "npm": ">=3.8"
   },
   "dependencies": {
     "fastclick": "^1.0.6",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
-    "react-router": "^3.0.0"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.5.1",
@@ -61,14 +74,13 @@
     "postcss-selector-matches": "^2.0.5",
     "postcss-selector-not": "^2.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "s3": "^4.4.0",
     "style-loader": "^0.13.1",
     "stylelint": "^7.7.1",
     "stylelint-config-standard": "^15.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0",
     "webpack-dev-middleware": "^1.9.0",
-    "webpack-hot-middleware": "^2.15.0"
+    "webpack-hot-middleware": "^2.16.0"
   },
   "babel": {
     "presets": [
