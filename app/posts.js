@@ -1,11 +1,13 @@
-/* eslint-disable import/no-dynamic-require, global-require */
+const posts = [];
+const context = require.context('../posts', false, /\.(md)$/);
 
-// declare your active blog posts here
-const titles = [
-  'sample-post-1.md',
-  'sample-post-2.md',
-];
-
-const posts = titles.map((title) => require(`../posts/${title}`));
+context.keys().forEach((filename) => {
+  const post = Object.assign(
+    {},
+    context(filename),
+    { url: filename.slice(2, filename.length - 3) },
+  );
+  posts.push(post);
+});
 
 export default posts;
