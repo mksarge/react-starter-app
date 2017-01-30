@@ -58,7 +58,7 @@ tasks.set('html', () => {
 // Generate sitemap.xml
 // -----------------------------------------------------------------------------
 tasks.set('sitemap', () => {
-  const urls = config.routes;
+  const urls = config.routes.map((x) => ({ loc: x }));
   const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
   const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
   const output = render({ config, urls });

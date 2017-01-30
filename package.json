@@ -102,6 +102,7 @@
     "stylelint": "stylelint \"app/**/*.css\" \"public/index.css\"",
     "lint": "npm run eslint && npm run stylelint",
     "test": "mocha --compilers js:babel-register",
+    "build": "node run build",
     "start": "node run",
     "publish": "node run publish"
   }
