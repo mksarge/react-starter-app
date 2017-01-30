@@ -1,17 +1,18 @@
 import React from 'react';
 import css from './Footer.css';
+import config from '../../config';
 
 const Footer = () => (
   <footer className={css.footer}>
     <p>
       React Starter App is on&nbsp;
-      <a href="https://github.com/mksarge/react-starter-app">GitHub</a>.
+      <a href={config.github}>GitHub</a>.
       <br />
-      <a href="https://react-starter-app.firebaseapp.com/docs">Docs</a>
+      <a href="/docs">Docs</a>
       &nbsp;&middot;&nbsp;
-      <a href="https://github.com/mksarge/react-starter-app/issues">Report an issue</a>
+      <a href={`${config.github}/issues`}>Report an issue</a>
       &nbsp;&middot;&nbsp;
-      <a href="https://github.com/mksarge/react-starter-app/fork">Contribute</a>
+      <a href={`${config.github}/fork`}>Contribute</a>
     </p>
   </footer>
 );
