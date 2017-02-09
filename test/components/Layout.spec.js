@@ -5,7 +5,6 @@ import Layout from '../../app/components/Layout';
 import Header from '../../app/components/Header';
 import Navbar from '../../app/components/Navbar';
 import Footer from '../../app/components/Footer';
-import config from '../../app/config';
 
 describe('Layout component', () => {
   const wrapper = shallow(
@@ -16,7 +15,7 @@ describe('Layout component', () => {
 
   it('renders <Header />', () => {
     expect(wrapper.contains(
-      <Header text={config.name} />
+      <Header />
     )).to.equal(true);
   });
 
