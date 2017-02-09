@@ -9,9 +9,7 @@ const Layout = (props) => (
   <div className={css.layout} >
     <Header text={config.name} />
     <Navbar />
-    <div className={css.page}>
-      {props.children}
-    </div>
+    <div className={css.page}>{props.children}</div>
     <Footer />
   </div>
 );
