@@ -11,7 +11,7 @@ const renderLinks = () => config.routes.map((link) => {
     className={css.navblock}
     to={link.path}
     style={currentPath === link.name
-      ? { background: '#236', color: 'white' }
+      ? { background: '#228', color: 'white' }
       : { background: 'none', color: '#24b' }
     }
   >{link.name}

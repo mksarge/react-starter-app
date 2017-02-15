@@ -2,8 +2,6 @@
 title: Home
 ---
 
-# React Starter App
-
 Welcome to **React Starter App** - an open-source boilerplate for building and deploying
 [static][swa] React web apps quickly. Use it to kickstart your next project, landing page,
 documentation site, or personal blog! It's also a great place for beginners to learn about

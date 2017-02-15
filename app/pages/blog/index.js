@@ -4,17 +4,16 @@ import Page from '../../components/Page';
 import css from './index.css';
 import posts from '../../posts';
 
-const renderPosts = () => posts.map((post) => (
+const renderPosts = posts.map((post) => (
   <li className={css.links} key={post.url}>
     <Link to={`/blog/${post.url}`}>{post.title}</Link>
   </li>));
 
 const BlogPage = () => (
-  <Page title="Blog">
-    <h1>Posts</h1>
+  <Page title="Posts">
     <h3>January 2017</h3>
     <ul>
-      {renderPosts()}
+      {renderPosts}
     </ul>
   </Page>
 );

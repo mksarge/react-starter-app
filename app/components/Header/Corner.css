@@ -5,8 +5,8 @@
 .octosvg {
   height: inherit;
   width: auto;
-  fill: #fff;
-  color: #236;
+  fill: #f0f4fa;
+  color: #45e;
   position: absolute;
   top: 0;
   border: 0;
@@ -24,19 +24,19 @@
 
 @media screen and (min-width: 450px) {
   .octocorner {
-    height: 100px;
+    height: 80px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .octocorner {
-    height: 110px;
+    height: 95px;
   }
 }
 
 @media screen and (min-width: 980px) {
   .octocorner {
-    height: 125px;
+    height: 110px;
   }
 }
 
