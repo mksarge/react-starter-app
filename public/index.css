@@ -62,9 +62,9 @@ ul {
 hr {
   margin: 30px 0 20px;
   border: 0;
-  height: 2px;
+  height: 1px;
   background: #cfd8fa;
-  background-image: linear-gradient(to right, #eef, #24b, #eef);
+  background-image: linear-gradient(to right, #eef, #67f, #eef);
 }
 
 code {

@@ -1,0 +1,9 @@
+.link {
+  display: inline;
+}
+
+.date {
+  display: inline-block;
+  padding-left: 7px;
+  color: #78a;
+}

@@ -1,16 +1,9 @@
 ---
-title: Sample Post 2
-subtitle: Lorem Ipsum
-url: sample-post-2
-tags: tag1, tag2, tag3
-date: Sunday, 01. January 2017 12:00AM
+title: "Sample Post 2"
+author: "Michael Sargent"
+date: "2017-02-15"
+subtext: "Lorem Ipsum"
 ---
-
-<br>
-
-> Generated with https://github.com/jaspervdj/lorem-markdownum
-
-<br>
 
 # Cornua bis media
 
@@ -88,3 +81,7 @@ vetusque laqueos hac et versum tela de vulnere vincat: mirabile. Eadem
 propinquae forma. *Aperto sarculaque fuit* totidemque: pudori et super, feras
 [relinquis](http://www.infantem.com/et.html) clivo si concutit equidem lacertis
 mihi; serpentis quam.
+
+<hr>
+
+> Generated with https://github.com/jaspervdj/lorem-markdownum

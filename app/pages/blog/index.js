@@ -5,13 +5,14 @@ import css from './index.css';
 import posts from '../../posts';
 
 const renderPosts = posts.map((post) => (
-  <li className={css.links} key={post.url}>
-    <Link to={`/blog/${post.url}`}>{post.title}</Link>
+  <li key={post.url}>
+    <h5 className={css.link}><Link to={`/blog/${post.url}`}>{post.title}</Link></h5>
+    <p className={css.date}>{post.formattedDate}</p>
   </li>));
 
 const BlogPage = () => (
-  <Page title="Posts">
-    <h3>January 2017</h3>
+  <Page title="Blog">
+    <h2>All Posts</h2>
     <ul>
       {renderPosts}
     </ul>
