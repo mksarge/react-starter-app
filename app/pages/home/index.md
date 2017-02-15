@@ -9,6 +9,12 @@ building modern, static, single page applications with React.
 
 <br>
 
+React Starter App is built on top of [React Static Boilerplate][rsb] (RSB) and borrows heavily
+from its build tooling - I designed React Starter App while learning about React and tweaking
+RSB to suit my own preferences and needs for a React boilerplate.
+
+<br>
+
 **Read more in the [docs](/docs).**
 
 <br>
@@ -16,29 +22,28 @@ building modern, static, single page applications with React.
 ### Getting Started
 
 1. Install React Starter App
-```
+```sh
 git clone https://github.com/mksarge/react-starter-app
 npm install
 ```
 
-2. Lint with [ESlint][eslint] and [Stylelint][stylelint]
-```
+2. Lint with [ESlint][eslint] & [Stylelint][stylelint]
+```sh
 npm run lint
 ```
 
-3. Test with [Mocha][mocha] and [Enzyme][enzyme]
-```
+3. Test with [Mocha][mocha] & [Enzyme][enzyme]
+```sh
 npm run test
 ```
 
-4. Start development build with [Webpack 2][webpack], [Babel][babel], and
-[Hot Module Replacement][hmr]
-```
+4. Start development build with [Babel][babel], [Webpack][webpack], & [Hot Module Replacement][hmr]
+```sh
 npm run start
 ```
 
 5. Deploy to Firebase
-```
+```sh
 npm run publish
 ```
 
@@ -68,6 +73,7 @@ send a [pull request][pulls]!
 > [MIT License][license]
 
 [swa]: <https://staticapps.org/>
+[rsb]: <https://github.com/kriasoft/react-static-boilerplate>
 [eslint]: <http://eslint.org/>
 [stylelint]: <http://stylelint.io/>
 [mocha]: <https://mochajs.org/>
