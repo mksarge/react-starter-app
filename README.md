@@ -3,9 +3,13 @@
 ### About
 
 [React Starter App][rsa] an open-source boilerplate for building and deploying
-[static][swa] React web apps quickly. Use it to kickstart your next project, landing page,
+static React web apps quickly. Use it to kickstart your next project, landing page,
 documentation site, or personal blog! It's also a great place for beginners to learn about
-building modern, static, single page applications with React.
+building modern, static, single-page applications with React.
+
+React Starter App is built on top of [React Static Boilerplate][rsb] (RSB) and borrows heavily
+from its build tooling - I designed React Starter App while learning about React and tweaking
+RSB to suit my own preferences and needs for a React boilerplate.
 
 **Read more in the [docs][rsa-docs].**
 
@@ -17,18 +21,17 @@ git clone https://github.com/mksarge/react-starter-app
 npm install
 ```
 
-Lint with [ESlint][eslint] and [Stylelint][stylelint]
+Lint with ESlint & Stylelint
 ```
 npm run lint
 ```
 
-Test with [Mocha][mocha] and [Enzyme][enzyme]
+Test with Mocha & Enzyme
 ```
 npm run test
 ```
 
-Start development build with [Webpack 2][webpack], [Babel][babel], and
-[Hot Module Replacement][hmr]
+Build and serve with Babel, Webpack & Hot Module Replacement
 ```
 npm run start
 ```
@@ -37,12 +40,6 @@ Deploy to Firebase
 ```
 npm run publish
 ```
-
-### Resources
-
-New to React? [Learn][learn] about the
-[technologies][tech] used by React Starter App, or **build it from scratch**
-with the [step-by-step tutorial][tutorial].
 
 ### Contribute
 
@@ -54,20 +51,9 @@ send a [pull request][pulls]!
 [MIT License][license]
 
 [rsa]: <https://react-starter-app.firebaseapp.com/>
+[rsb]: <https://github.com/kriasoft/react-static-boilerplate>
 [rsa-docs]: <https://react-starter-app.firebaseapp.com/docs>
-[learn]: <https://react-starter-app.firebaseapp.com/docs#concepts-and-technologies>
-[tech]: <https://react-starter-app.firebaseapp.com/docs#core-technologies>
-[tutorial]: <https://react-starter-app.firebaseapp.com/docs#tutorial>
-[swa]: <https://staticapps.org/>
-[eslint]: <http://eslint.org/>
-[stylelint]: <http://stylelint.io/>
-[mocha]: <https://mochajs.org/>
-[enzyme]: <http://airbnb.io/enzyme/>
-[webpack]: <https://webpack.js.org/>
-[babel]: <https://babeljs.io/>
-[hmr]: <https://webpack.js.org/guides/hmr-react/>
 [github]: <https://github.com/mksarge/react-starter-app>
 [issues]: <https://github.com/mksarge/react-starter-app/issues>
 [pulls]: <https://github.com/mksarge/react-starter-app/pulls>
-[mksarge]: <https://github.com/mksarge/>
 [license]: <https://github.com/mksarge/react-starter-app/blob/master/LICENSE.txt>
