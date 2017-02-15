@@ -9,7 +9,7 @@ const Header = () => (
     <Corner link={config.github} />
     <div className={css.title}>
       <Link to="/">
-        <img className={css.logo} src="react-logo.png" alt="" />
+        <img className={css.logo} src={config.logo} alt="" />
         {config.name}
       </Link>
     </div>
