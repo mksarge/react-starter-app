@@ -3,10 +3,12 @@ title: Docs
 permalinks: true
 ---
 
-[[toc]]
-
 > React Starter App is constantly evolving! If you see something that needs updating, please
 [file an issue][issues]. Thanks!
+
+<br>
+
+[[toc]]
 
 <hr>
 

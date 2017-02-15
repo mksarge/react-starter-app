@@ -1,10 +1,6 @@
 .header {
   text-align: center;
-  background: linear-gradient(0deg, #228, #45f);
-  padding: 0;
-}
-
-.header2 {
+  background: linear-gradient(180deg, #67f, #cfd8fa);
   padding: 50px 0;
 }
 
@@ -24,10 +20,6 @@
 }
 
 @media screen and (min-width: 450px) {
-  .header2 {
-    padding: 50px 0;
-  }
-
   .title a {
     font-size: 3em;
   }
@@ -38,10 +30,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .header2 {
-    padding: 70px 0;
-  }
-
   .title a {
     font-size: 3.5em;
   }
@@ -52,10 +40,6 @@
 }
 
 @media screen and (min-width: 980px) {
-  .header2 {
-    padding: 80px 0;
-  }
-
   .title a {
     font-size: 4em;
   }

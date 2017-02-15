@@ -45,10 +45,18 @@ li {
   font-weight: 300;
 }
 
-a,
-a:hover {
+a {
   color: #67f;
   font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
 }
 
 hr {

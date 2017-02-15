@@ -63,7 +63,7 @@ send a [pull request][pulls]!
 
 > ##### React Starter App
 >
-> © 2017-present [mksarge][mksarge]
+> © 2017-present [Michael Sargent][mksarge]
 >
 > [MIT License][license]
 
