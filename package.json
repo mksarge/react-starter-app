@@ -109,8 +109,8 @@
     "eslint": "eslint app test utils run.js webpack.config.js",
     "stylelint": "stylelint \"app/**/*.css\" \"public/index.css\"",
     "lint": "npm run eslint && npm run stylelint",
-    "test": "npm run lint && node_modules/.bin/_mocha --require test/.setup.js \"test/**/*.spec.js\"",
-    "cover": "npm run lint && node_modules/.bin/istanbul cover node_modules/.bin/_mocha --require test/.setup.js \"test/**/*.spec.js\"",
+    "test": "node_modules/.bin/_mocha --require test/.setup.js \"test/**/*.spec.js\"",
+    "cover": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --require test/.setup.js \"test/**/*.spec.js\"",
     "build": "node run build",
     "start": "node run",
     "publish": "npm run lint && node run publish"
