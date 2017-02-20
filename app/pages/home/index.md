@@ -2,85 +2,95 @@
 title: Home
 ---
 
-Welcome to **React Starter App** - an open-source boilerplate for building and deploying
-[static][swa] React web apps quickly. Use it to kickstart your next project, landing page,
-documentation site, or personal blog! It's also a great place for beginners to learn about
-building modern, static, single page applications with React.
+Welcome to [React Starter App][github] - a modern, open-source React boilerplate that is a
+good starting point to learn about, build, and deploy a full-fledged, static,
+single-page React application served blazingly fast by a static content hosting service
+like [Firebase][firebase] or [Amazon S3][s3].
 
 <br>
 
-React Starter App is built on top of [React Static Boilerplate][rsb] (RSB) and borrows heavily
-from its build tooling - I designed React Starter App while learning about React and tweaking
-RSB to suit my own preferences and needs for a React boilerplate.
+React Starter App is based on another great project - [React Static Boilerplate][rsb] - and
+borrows from much of its tooling and infrastructure. Read more about the motivation for this
+project and the differences between the two projects in the [docs](/docs#motivation).
 
 <br>
 
-**Read more in the [docs](/docs).**
+For a Redux-integrated variant of this project, check out the sister project: [Redux Starter App][redux-starter-app].
+
+<hr>
+
+### Features
+
+React Starter App features a modern development, build, and testing toolchain including:
 
 <br>
+
+- [React Router][react-router] for handling client-side routing
+- [CSS Modules][css-modules] for writing modular and composable CSS
+- [Markdown-it][md-it] and a custom markdown loader for rendering markdown as HTML
+- [Babel][babel] for transpiling application code from ES6+ to ES5
+- [Webpack][webpack] for bundling files, and allowing [Hot Module Replacement][hmr] in development
+- [ESlint][eslint] and [Stylelint][stylelint] for linting .js and .css, respectively
+- [Mocha][mocha] and [Enzyme][enzyme] for unit testing React components
+- [Travis CI][travis] configuration for continuous testing/integration
+- [Firebase][firebase] deploy tools & configuration and for quick and painless deploys
+
+<br>
+
+**Learn more about the technologies used to build React Starter App in the [docs](/docs).**
+
+<hr>
 
 ### Getting Started
 
-1. Install React Starter App
 ```sh
-git clone https://github.com/mksarge/react-starter-app
+# Clone the repository
+git clone https://github.com/mksarge/react-starter-app myproject
+cd myproject
+
+# Install dependencies
 npm install
-```
 
-2. Lint with [ESlint][eslint] & [Stylelint][stylelint]
-```sh
-npm run lint
-```
-
-3. Test with [Mocha][mocha] & [Enzyme][enzyme]
-```sh
+# Run tests
 npm run test
-```
 
-4. Start development build with [Babel][babel], [Webpack][webpack], & [Hot Module Replacement][hmr]
-```sh
+# Start dev build
 npm run start
-```
 
-5. Deploy to Firebase
-```sh
+# Deploy to Firebase
 npm run publish
 ```
 
-<br>
-
-### Resources
-
-New to React? [Learn](docs#concepts-and-technologies) about the
-[technologies](/docs#core-technologies) used by React Starter App, or **build it from scratch**
-with the [step-by-step tutorial](/docs#tutorial).
-
-<br>
+<hr>
 
 ### Contribute
 
 React Starter App is on [GitHub][github] - feel free to fork it, raise an [issue][issues] or
-send a [pull request][pulls]!
+submit a [pull request][pulls]!
 
-<br>
+<hr>
 
 ### License
 
-> ##### React Starter App
->
-> © 2017-present [Michael Sargent][mksarge]
->
-> [MIT License][license]
+This project is licensed under the [MIT][license] license.
 
 [swa]: <https://staticapps.org/>
+[rsa]: <https://react-starter-app.firebaseapp.com/>
 [rsb]: <https://github.com/kriasoft/react-static-boilerplate>
+[firebase]: <https://firebase.google.com/>
+[s3]: <http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html>
+[react-router]: <https://github.com/ReactTraining/react-router>
+[css-modules]: <https://github.com/css-modules/css-modules>
+[md-it]: <https://github.com/markdown-it/markdown-it>
+[babel]: <https://babeljs.io/>
+[webpack]: <https://webpack.js.org/>
+[hmr]: <https://webpack.js.org/guides/hmr-react/>
 [eslint]: <http://eslint.org/>
 [stylelint]: <http://stylelint.io/>
 [mocha]: <https://mochajs.org/>
 [enzyme]: <http://airbnb.io/enzyme/>
-[webpack]: <https://webpack.js.org/>
-[babel]: <https://babeljs.io/>
-[hmr]: <https://webpack.js.org/guides/hmr-react/>
+[travis]: <https://travis-ci.org/>
+[redux-starter-app]: <https://github.com/mksarge/redux-starter-app>
 [github]: <https://github.com/mksarge/react-starter-app>
 [issues]: <https://github.com/mksarge/react-starter-app/issues>
 [pulls]: <https://github.com/mksarge/react-starter-app/pulls>
