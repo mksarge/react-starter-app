@@ -1,4 +1,4 @@
-# React Starter App
+# React Starter App [![Build Status](https://travis-ci.org/mksarge/react-starter-app.svg?branch=master)](https://travis-ci.org/mksarge/react-starter-app)
 
 Opinionated React boilerplate application based on [React Static Boilerplate][rsb].
 
