@@ -12,18 +12,15 @@ permalinks: true
 
 <hr>
 
-# About
-
 ### Inspiration
 
 React Starter App (RSA) is a [static web app][swa] inspired by and built upon another amazing project:
 
-<br>
-
 > ##### [React Static Boilerplate][rsb]
 > by [@koistya](https://github.com/koistya)
+>
 > <br>
-> <br>
+>
 > React Static Boilerplate (RSB) is a boilerplate and tooling for creating modern stand-alone
 web applications (aka SPAs) for a serverless architecture. RSB significantly reduces cost by
 eliminating the need for servers such as EC2 instances because the entire site can be hosted
@@ -32,8 +29,6 @@ built with RSB can be fully functional with REST API or GraphQL calls to micro-s
 as Amazon Lambda, Azure Functions, or dynamic Docker endpoints hosted on DigitalOcean. RSB
 demonstrates how to use component-based UI development approach with best of breed technologies
 including React, Redux, Babel, Webpack, Browsersync, React Hot Loader and more.
-
-<br>
 
 React Static Boilerplate has a ton of neat features and **may be a better starting point for
 some use cases** - read about the core differences between RSA and RSB
@@ -44,30 +39,7 @@ some use cases** - read about the core differences between RSA and RSB
 If you are still unsure about which project to use, I **highly recommend trying both** and
 learning about their differences first-hand!
 
-<br>
-
-### Core Technologies
-
-- React Application
-  - [React][react]
-  - [React Router][react-router]
-  - [CSS Modules][css-modules]
-  - [Markdown-it][md-it]
-- Linting
-  - [ESLint][eslint]
-  - [Stylelint][stylelint]
-- Testing
-  - [Mocha][mocha]
-  - [Enzyme][enzyme]
-- Build process
-  - [Webpack 2][webpack] with [HMR][hmr]
-  - [Babel][babel]
-  - [PostCSS][postcss]
-
-Learn more about how these technologies are used in React Starter App
-[here](#concepts-and-technologies).
-
-<br>
+<hr>
 
 ### App Structure
 
@@ -94,9 +66,44 @@ Learn more about how these technologies are used in React Starter App
 
 <hr>
 
-# Why React Starter App?
+### Core Technologies
 
-### Comparison with RSB
+- React Application
+  - [React][react]
+  - [React Router][react-router]
+  - [CSS Modules][css-modules]
+  - [Markdown-it][md-it]
+- Linting
+  - [ESLint][eslint]
+  - [Stylelint][stylelint]
+- Testing
+  - [Mocha][mocha]
+  - [Enzyme][enzyme]
+- Build process
+  - [Webpack 2][webpack] with [HMR][hmr]
+  - [Babel][babel]
+  - [PostCSS][postcss]
+
+<hr>
+
+### Core Concepts
+
+**[under construction]**
+
+This section explains some advanced concepts as they relate to React Starter App.
+
+- Static Web Apps
+- Routing with Single Page Applications
+- React State Management
+- CSS Modules
+- Webpack
+- Further Reading
+
+<hr>
+
+### Why React Starter App?
+
+##### Comparison with RSB
 
 While using React Static Boilerplate, I found myself repeatedly using a stripped-down version
 with some core integrations removed; this led me to create React Starter App.
@@ -140,55 +147,29 @@ CSS Modules and PostCSS are invaluable tools, React-MDL is just one of
 Instead, a custom CSS reset is defined in `public/index.css`. If you need to use a UI library,
 you can import it into your own project.
 
-<br>
+<hr>
 
 ### Common Use Cases
 
-React Starter App is perfect for building simple websites like a **landing page** for your
-open-source project, a **documentation site**, or a **personal portfolio/blog**.
-Out of the box, you might only need to
-
-- change the `.css` and `.md` files
+React Starter App is perfect for building simple websites like a landing page and docs site
+for your open-source project, or a personal portfolio/blog. Out of the box, you might only
+need to:
+- alter the `.css` and `.md` files
 - add or remove routes from `app/index.js`
 
 to get started on your own custom page.
 
 <br>
 
+**[under construction]**
+
 React Starter App also scales well and can be used to build complex applications. For a
 working example including Redux integration, OAuth2 login/sessions, and HTTP calls to a
-Node.js REST API, check out [todo].
+Node.js API, check out [todo].
 
 <hr>
 
-# Concepts and Technologies
-
-This section explains some concepts and technologies as they relate to React Starter App.
-
-- React
-- Single Page Applications
-  - Routing
-    - React Router
-- State Management
-  - Redux
-- CSS
-  - CSS Modules
-- JavaScript Bundler
-  - Webpack
-- JavaScript Transpiler
-  - Babel
-- Static Web Apps
-  - Deployment
-    - Firebase
-    - GitHub Pages
-    - Surge
-    - Netlify
-- Further Reading
-  - Links
-
-<hr>
-
-# Tutorial
+### Tutorial
 
 **[under construction]**
 

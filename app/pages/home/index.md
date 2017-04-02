@@ -2,42 +2,37 @@
 title: Home
 ---
 
-Welcome to [React Starter App][github] - a modern, open-source React boilerplate that is a
-good starting point to learn about, build, and deploy a full-fledged, static,
-single-page React application served blazingly fast by a static content hosting service
-like [Firebase][firebase] or [Amazon S3][s3].
+**React Starter App** is a starting point for building and deploying production-ready,
+static, single-page React applications. It can be served blazingly fast by a static content
+hosting service like [Firebase][firebase], [Amazon S3][s3], or [GitHub pages][ghp]<sup>[[1]](/docs#github-pages)</sup>.
 
 <br>
 
-React Starter App is based on another great project - [React Static Boilerplate][rsb] - and
-borrows from much of its tooling and infrastructure. Read more about the motivation for this
-project and the differences between the two projects in the [docs](/docs#motivation).
-
-<br>
-
-For a Redux-integrated variant of this project, check out the sister project: [Redux Starter App][redux-starter-app].
+React Starter App is based on another great project — [React Static Boilerplate][rsb], and
+borrows from much of its tooling and infrastructure. [Read more here](/docs#motivation) about the motivation for this
+project and the differences between the two.
 
 <hr>
 
 ### Features
 
-React Starter App features a modern development, build, and testing toolchain including:
+React Starter App features modern development, build, test, and deploy tooling including:
 
 <br>
 
 - [React Router][react-router] for handling client-side routing
-- [CSS Modules][css-modules] for writing modular and composable CSS
-- [Markdown-it][md-it] and a custom markdown loader for rendering markdown as HTML
 - [Babel][babel] for transpiling application code from ES6+ to ES5
-- [Webpack][webpack] for bundling files, and allowing [Hot Module Replacement][hmr] in development
+- [Webpack][webpack] for bundling files, and [Hot Module Replacement][hmr] in development
+- [CSS Modules][css-modules] for writing modular and composable CSS
+- [Markdown-it][md-it] for rendering markdown as React using a Webpack loader
 - [ESlint][eslint] and [Stylelint][stylelint] for linting .js and .css, respectively
 - [Mocha][mocha] and [Enzyme][enzyme] for unit testing React components
 - [Travis CI][travis] configuration for continuous testing/integration
-- [Firebase][firebase] deploy tools & configuration and for quick and painless deploys
+- [Firebase][firebase] configuration for quick and easy deployment
 
 <br>
 
-**Learn more about the technologies used to build React Starter App in the [docs](/docs).**
+**Learn more about the technologies used to build React Starter App [here](/docs).**
 
 <hr>
 
@@ -65,15 +60,16 @@ npm run publish
 
 ### Contribute
 
-React Starter App is on [GitHub][github] - feel free to fork it, raise an [issue][issues] or
-submit a [pull request][pulls]!
+React Starter App is on [GitHub][github] — feel free to fork it, raise an [issue][issues] or
+submit a [pull request][pulls].
 
 <hr>
 
 ### License
 
-This project is licensed under the [MIT][license] license.
+This project is licensed under the [MIT license][license].
 
+[ghp]: <https://pages.github.com/>
 [swa]: <https://staticapps.org/>
 [rsa]: <https://react-starter-app.firebaseapp.com/>
 [rsb]: <https://github.com/kriasoft/react-static-boilerplate>
