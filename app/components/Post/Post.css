@@ -7,7 +7,7 @@
 .title {
   text-align: center;
   line-height: 1.3em;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 0.5em;
   color: #229;
 }
@@ -39,5 +39,5 @@
 .body h5,
 .body h6 {
   margin-top: 1em;
-  font-weight: 500;
+  font-weight: 400;
 }

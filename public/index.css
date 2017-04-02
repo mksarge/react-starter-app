@@ -26,9 +26,12 @@ li {
   color: #000;
 }
 
-h1 { font-size: 2em; }
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
 
-h2 { font-size: 1.7em; }
+h2 { font-size: 1.5em; }
 
 h3 { font-size: 1.4em; }
 
@@ -61,6 +64,7 @@ strong {
 
 ul {
   margin: 0;
+  padding: 0 30px;
 }
 
 hr {
@@ -71,34 +75,32 @@ hr {
   background-image: linear-gradient(to right, #eef, #67f, #eef);
 }
 
+pre,
+blockquote {
+  margin: 1.5em 10px !important;
+  padding: 10px 15px !important;
+}
+
+blockquote,
+pre {
+  border-left: 4px solid #67f;
+  border-right: 4px solid #f0f4fa;
+  background: #f0f4fa;
+}
+
 code {
   font-size: 0.9em;
   font-family: 'Courier New', Courier, monospace;
-  background: #f0f4fa;
   white-space: pre-wrap;
 }
 
-pre,
-blockquote {
-  font-size: 0.9em;
-  margin: 10px;
-  padding: 5px;
-  background: #f0f4fa;
-  border-left: solid #cfd8fa 5px;
-  border-right: solid #f0f4fa 5px;
-}
-
-.header-anchor {
-  text-decoration: none;
+.hljs-comment {
+  color: #67f;
 }
 
 @media screen and (min-width: 600px) {
   #app {
-    font-size: 16px;
-  }
-
-  ul {
-    padding: 0 30px;
+    font-size: 15px;
   }
 
   pre,
@@ -110,11 +112,11 @@ blockquote {
 
 @media screen and (min-width: 980px) {
   #app {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   ul {
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   pre,

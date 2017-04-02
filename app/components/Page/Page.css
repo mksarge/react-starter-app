@@ -2,7 +2,8 @@
   position: relative;
   height: auto;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
+  padding-top: 50px;
   padding-bottom: 150px;
   margin: 0 auto;
   text-align: left;

@@ -1,5 +1,4 @@
 .navbar {
-  margin-bottom: 20px;
   text-align: center;
   background: linear-gradient(180deg, #cfd8fa, #d5e0ff);
 }
@@ -7,9 +6,8 @@
 .navblock {
   outline: none;
   display: inline-block;
-  margin: 0;
+  margin: 0 1px;
   padding: 0 25px;
-  font-size: 1.2em;
   text-decoration: none;
   text-transform: capitalize;
   color: #fff;
@@ -17,25 +15,7 @@
 
 .navblock:hover {
   text-decoration: none;
-  color: #89f;
-  border-bottom: 4px solid #89f;
-}
-
-@media screen and (min-width: 450px) {
-  .navblock {
-    padding: 0 25px;
-    margin: 0 5px;
-  }
-}
-
-@media screen and (min-width: 980px) {
-  .navbar {
-    padding-right: 100px;
-    text-align: right;
-  }
-
-  .navblock {
-    padding: 0 25px;
-    margin: 0 10px;
-  }
+  color: #67f;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
 }
