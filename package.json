@@ -1,9 +1,9 @@
 {
   "name": "react-starter-app",
   "version": "1.0.0",
-  "author": "Michael Sargent",
-  "description": "React Starter App is a static React/Redux boilerplate with modern build, test, and deploy tooling.",
   "private": true,
+  "description": "React Starter App is a static React/Redux boilerplate with modern build, test, and deploy tooling.",
+  "author": "Michael Sargent <michael-sargent@hotmail.com> (https://mksarge.com)",
   "license": "MIT",
   "keywords": [
     "static",
@@ -20,13 +20,27 @@
     "node": ">=6",
     "npm": ">=3.8"
   },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "stage-1",
+      "react"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
   "dependencies": {
     "fastclick": "^1.0.6",
     "moment": "^2.18.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
-    "react-router": "^3.0.5",
     "redux": "^3.6.0",
     "redux-json-router": "0.0.0"
   },
@@ -93,21 +107,6 @@
     "webpack": "^2.4.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.18.0"
-  },
-  "babel": {
-    "presets": [
-      "react",
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ],
-      "stage-1"
-    ],
-    "plugins": [
-      "transform-runtime"
-    ]
   },
   "scripts": {
     "eslint": "eslint app test utils run.js webpack.config.js",
