@@ -1,8 +1,7 @@
 ---
 title: "Sample Post 1"
-author: "Michael Sargent"
-date: "2017-01-01"
 subtext: "Power your blog with React Starter App!"
+date: "2017-01-01"
 ---
 
 # Heading h1

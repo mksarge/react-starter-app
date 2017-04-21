@@ -1,20 +1,12 @@
 import moment from 'moment';
 
-const posts = [];
+const markdown = require.context('../posts', false, /\.(md)$/);
 
-// load posts
-const context = require.context('../posts', false, /\.(md)$/);
-
-// build posts array
-context.keys().forEach((filename) => {
-  const post = Object.assign(
-    {},
-    context(filename),
-    { url: filename.slice(2, filename.length - 3) },
-    { formattedDate: moment(context(filename).date).format('MMM Do, YYYY') },
-  );
-  posts.push(post);
-});
+const posts = markdown.keys().map((filename) => ({
+  ...markdown(filename),
+  url: filename.slice(2, filename.length - 3),
+  formattedDate: moment(markdown(filename).date).format('MMM Do, YYYY'),
+}));
 
 // sort posts array by date
 posts.sort((a, b) => { // eslint-disable-line
