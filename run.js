@@ -1,15 +1,11 @@
 /**
  * Adapted from React Static Boilerplate
  * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
  */
 
-/* eslint-disable no-console, global-require */
+/* eslint-disable global-require, no-console, no-plusplus */
 
+const path = require('path');
 const fs = require('fs');
 const del = require('del');
 const ejs = require('ejs');
@@ -20,11 +16,8 @@ const config = {
   url: 'https://react-starter-app.firebaseapp.com',
   project: 'react-starter-app',
   trackingID: '',
-  routes: [
-    '/',
-    '/docs',
-    '/blog',
-  ],
+  routes: require('./config/config.json').routes,
+  postsDir: './posts',
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
@@ -58,11 +51,21 @@ tasks.set('html', () => {
 // Generate sitemap.xml
 // -----------------------------------------------------------------------------
 tasks.set('sitemap', () => {
-  const urls = config.routes.map((x) => ({ loc: x }));
-  const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
-  const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
-  const output = render({ config, urls });
-  fs.writeFileSync('public/sitemap.xml', output, 'utf8');
+  Promise.resolve()
+    .then(() => {
+      fs.readdirSync(config.postsDir)
+        .filter((filename) => path.extname(filename) === '.md')
+        .forEach((filename) => {
+          config.routes.push({ path: `/posts/${filename.slice(0, filename.length - 3)}` });
+        });
+    })
+    .then(() => {
+      const urls = config.routes.map((x) => ({ loc: x.path }));
+      const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
+      const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
+      const output = render({ config, urls });
+      fs.writeFileSync('public/sitemap.xml', output, 'utf8');
+    });
 });
 
 //
