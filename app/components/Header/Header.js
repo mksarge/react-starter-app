@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Corner from './Corner';
 import css from './Header.css';
-import config from '../../config';
+import config from '../../../config/config.json';
 
 const Header = () => (
   <div className={[css.header, css.header2].join(' ')}>

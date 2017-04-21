@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
 import css from './index.css';
-import posts from '../../posts';
+import posts from '../../../config/posts';
 
 const renderPosts = posts.map((post) => (
   <li key={post.url}>

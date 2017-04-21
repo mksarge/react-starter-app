@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import css from './Page.css';
-import config from '../../config';
+import config from '../../../config/config.json';
 
 class Page extends React.Component {
   componentDidMount() {

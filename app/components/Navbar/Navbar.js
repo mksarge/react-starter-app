@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import css from './Navbar.css';
-import config from '../../config';
+import config from '../../../config/config.json';
 import { getRootPath } from '../../utils';
 
 const renderLinks = () => config.routes.map((link) => {

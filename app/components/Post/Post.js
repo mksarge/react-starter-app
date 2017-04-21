@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { browserHistory, Link } from 'react-router';
-import posts from '../../posts';
+import posts from '../../../config/posts';
 import Page from '../Page';
 import css from './Post.css';
 

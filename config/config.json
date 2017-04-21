@@ -1,0 +1,19 @@
+{
+  "name": "React Starter App",
+  "homepage": "https://react-starter-app.firebaseapp.com/",
+  "github": "https://github.com/mksarge/react-starter-app",
+  "routes": [
+    {
+      "path": "/",
+      "name": "home"
+    },
+    {
+      "path": "/docs",
+      "name": "docs"
+    },
+    {
+      "path": "/blog",
+      "name": "blog"
+    }
+  ]
+}
