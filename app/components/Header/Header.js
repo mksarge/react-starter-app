@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'redux-json-router';
 import Corner from './Corner';
 import css from './Header.css';
 import config from '../../../config/config.json';

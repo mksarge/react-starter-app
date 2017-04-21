@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'redux-json-router';
 import Page from '../../components/Page';
 import css from './index.css';
 import posts from '../../../config/posts';

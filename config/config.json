@@ -2,7 +2,7 @@
   "name": "React Starter App",
   "homepage": "https://react-starter-app.firebaseapp.com/",
   "github": "https://github.com/mksarge/react-starter-app",
-  "routes": [
+  "navigation": [
     {
       "path": "/",
       "name": "home"

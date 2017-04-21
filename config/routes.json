@@ -1,0 +1,24 @@
+[
+  {
+    "path": "/",
+    "page": "../app/pages/home"
+  },
+  {
+    "path": "/blog",
+    "page": "../app/pages/blog",
+    "children": [
+      {
+        "path": "/:id",
+        "page": "../app/pages/post"
+      }
+    ]
+  },
+  {
+    "path": "/docs",
+    "page": "../app/pages/docs"
+  },
+  {
+    "path": "*",
+    "page": "../app/pages/error"
+  }
+]

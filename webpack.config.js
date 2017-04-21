@@ -17,11 +17,22 @@ const pkg = require('./package.json');
 
 const isDebug = global.DEBUG === false ? false : !process.argv.includes('--release');
 const isVerbose = process.argv.includes('--verbose') || process.argv.includes('-v');
-const useHMR = !!global.HMR; // Hot Module Replacement (HMR)
+const useHMR = !!global.HMR;
 const babelConfig = Object.assign({}, pkg.babel, {
   babelrc: false,
   cacheDirectory: useHMR,
 });
+
+// .js files to be loaded with babel-loader
+const babelifiedDirectories = [
+  path.resolve(__dirname, './app'),
+  path.resolve(__dirname, './config'),
+];
+
+// .json files to be loaded with routes-loader
+const routesConfig = [
+  path.resolve(__dirname, './config/routes.json'),
+];
 
 // Webpack configuration (main.js => public/dist/main.{hash}.js)
 // http://webpack.github.io/docs/configuration.html
@@ -88,9 +99,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, './app'),
-        ],
+        include: babelifiedDirectories,
         loader: 'babel-loader',
         options: babelConfig,
       },
@@ -119,7 +128,16 @@ const config = {
       },
       {
         test: /\.json$/,
+        exclude: routesConfig,
         loader: 'json-loader',
+      },
+      {
+        test: /\.json$/,
+        include: routesConfig,
+        loader: 'redux-json-router/lib/route-loader',
+        options: {
+          chunks: false,
+        },
       },
       {
         test: /\.md$/,

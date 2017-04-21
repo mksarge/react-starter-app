@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import { browserHistory, Link } from 'react-router';
+import { push, Link } from 'redux-json-router';
 import posts from '../../../config/posts';
-import Page from '../Page';
+import Page from '../../components/Page';
 import css from './Post.css';
 
 class Post extends React.Component {
@@ -13,7 +13,7 @@ class Post extends React.Component {
   componentWillMount() {
     // load the blog post from the url, else redirect to /blog
     const post = posts.find((val) => val.url === this.props.params.postId);
-    (!post) ? browserHistory.push('/blog') : this.setState({ post }); // eslint-disable-line no-unused-expressions
+    (!post) ? push('/blog') : this.setState({ post }); // eslint-disable-line no-unused-expressions
   }
 
   render() {
