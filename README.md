@@ -1,6 +1,6 @@
 # React Starter App [![Build Status](https://travis-ci.org/mksarge/react-starter-app.svg?branch=master)](https://travis-ci.org/mksarge/react-starter-app)
 
-Opinionated React boilerplate application based on [React Static Boilerplate][rsb].
+React Starter App is a starting point for building and deploying static, single-page React/Redux applications.
 
 Learn more at https://react-starter-app.firebaseapp.com
 
