@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import { push, Link } from 'redux-json-router';
 import posts from '../../../config/posts';
 import Page from '../../components/Page';
-import css from './Post.css';
+import css from './index.css';
 
 class Post extends React.Component {
   constructor() {
@@ -12,8 +13,8 @@ class Post extends React.Component {
 
   componentWillMount() {
     // load the blog post from the url, else redirect to /blog
-    const post = posts.find((val) => val.url === this.props.params.postId);
-    (!post) ? push('/blog') : this.setState({ post }); // eslint-disable-line no-unused-expressions
+    const post = posts.find((val) => val.url === this.props.params.id);
+    (!post) ? this.props.dispatch(push('/blog')) : this.setState({ post }); // eslint-disable-line no-unused-expressions
   }
 
   render() {
@@ -33,14 +34,9 @@ class Post extends React.Component {
 
 Post.propTypes = {
   params: PropTypes.shape({
-    postId: PropTypes.string,
+    id: PropTypes.string,
   }),
+  dispatch: PropTypes.func,
 };
 
-Post.defaultProps = {
-  params: {
-    postId: null,
-  },
-};
-
-export default Post;
+export default connect()(Post);

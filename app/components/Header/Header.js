@@ -3,7 +3,7 @@ import { Link } from 'redux-json-router';
 import Corner from './Corner';
 import css from './Header.css';
 import config from '../../../config/config.json';
-import reactLogo from './react.svg';
+import reactLogo from './assets/react.svg';
 
 const Header = () => (
   <div className={css.header}>

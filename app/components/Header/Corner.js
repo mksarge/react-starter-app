@@ -40,8 +40,4 @@ Corner.propTypes = {
   link: PropTypes.string,
 };
 
-Corner.defaultProps = {
-  link: '',
-};
-
 export default Corner;
