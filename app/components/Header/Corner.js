@@ -1,6 +1,7 @@
 // Adapted from: http://tholman.com/github-corners/
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import css from './Corner.css';
 
 const Corner = (props) => (
