@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import FastClick from 'fastclick';
 import { createBrowserHistory, startListener, Router } from 'redux-json-router';
+import Layout from './components/Layout';
 import configureStore from './redux/store';
 import routeConfig from '../config/routes.json';
 
@@ -18,7 +19,9 @@ startListener(history, store);
 const render = (routes) => {
   ReactDOM.render(
     <Provider store={store}>
+      <Layout>
         <Router routes={routes} />
+      </Layout>
     </Provider>,
     document.getElementById('app'));
 };
