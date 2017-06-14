@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { push, Link } from 'redux-json-router';
+import { Link, push } from 'redux-json-router';
 import posts from '../../../config/posts';
 import Page from '../../components/Page';
 import css from './index.css';

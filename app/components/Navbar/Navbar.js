@@ -12,7 +12,7 @@ const Navbar = ({ router }) => (
         key={link.name}
         className={css.navblock}
         to={link.path}
-        style={`/${router.paths[0]}` === link.path
+        style={router.pathname === link.path
           ? { background: '#fff', color: '#67f', borderRadius: '5px 5px 0 0' }
           : {}}
       >{link.name}</Link>

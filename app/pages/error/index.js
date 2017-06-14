@@ -1,5 +1,5 @@
 import React from 'react';
-import { goBack, Link } from 'redux-json-router';
+import { Link } from 'redux-json-router';
 import Page from '../../components/Page';
 import css from './index.css';
 
@@ -13,7 +13,7 @@ const ErrorPage = () => (
       <p>
         The page you&apos;re looking for does not exist.
           <br />
-        <a href="/" onClick={() => goBack()}>Go back</a>
+        <Link to="/" action="back">Go back</Link>
         , or head to the &nbsp;<Link to="/">home page</Link>.
         </p>
     </div>

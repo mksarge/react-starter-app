@@ -5,15 +5,15 @@
   "routes": [
     {
       "path": "/",
-      "name": "home"
+      "name": "Home"
     },
     {
       "path": "/docs",
-      "name": "docs"
+      "name": "Docs"
     },
     {
       "path": "/blog",
-      "name": "blog"
+      "name": "Blog"
     }
   ]
 }
