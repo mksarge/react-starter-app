@@ -34,7 +34,7 @@ FastClick.attach(document.body);
 
 // Enable Hot Module Replacement (HMR)
 if (module.hot) {
-  module.hot.accept('../config/routes.json', () => {
+  module.hot.accept(['../config/routes.json', './components/Layout'], () => {
     render(routeConfig);
   });
 }
