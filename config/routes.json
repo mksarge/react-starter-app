@@ -1,7 +1,8 @@
 [
   {
     "path": "/",
-    "page": "../app/pages/home"
+    "page": "../app/pages/home",
+    "chunk": "main"
   },
   {
     "path": "/blog",

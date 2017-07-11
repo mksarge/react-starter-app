@@ -66,6 +66,7 @@ const config = {
     chunkModules: isVerbose,
     cached: isVerbose,
     cachedAssets: isVerbose,
+    modules: isVerbose,
   },
 
   // The list of plugins for Webpack compiler
@@ -85,6 +86,7 @@ const config = {
       debug: isDebug,
       minimize: !isDebug,
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
   ],
 
   // Options affecting the normal modules
@@ -129,7 +131,7 @@ const config = {
         include: routesConfig,
         loader: 'redux-json-router/lib/route-loader',
         options: {
-          chunks: false,
+          chunks: true,
         },
       },
       {
