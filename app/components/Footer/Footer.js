@@ -5,7 +5,7 @@ import config from '../../../config/config.json';
 const Footer = () => (
   <footer className={css.footer}>
     <p>
-      React Starter App is on&nbsp;
+      {config.name} is on&nbsp;
       <a href={config.github}>GitHub</a>.
       <br />
       <a href="/docs">Docs</a>
