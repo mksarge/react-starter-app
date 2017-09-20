@@ -12,10 +12,10 @@ const ErrorPage = () => (
       </div>
       <p>
         The page you&apos;re looking for does not exist.
-          <br />
+        <br />
         <Link to="/" action="back">Go back</Link>
         , or head to the &nbsp;<Link to="/">home page</Link>.
-        </p>
+      </p>
     </div>
   </Page>
 );
